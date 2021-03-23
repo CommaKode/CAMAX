@@ -1,16 +1,18 @@
 {
     "version": 3,
-    "mappings": "ACAA,UAAU;EACN,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,yBAAyB",
+    "mappings": "ACAA,UAAU;EACN,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,yBAAyB;;;AIAlC,AAAA,CAAC,EAAE,CAAC,AAAA,OAAO,EAAE,CAAC,AAAA,QAAQ,CAAC;EACnB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAKD,AAAA,IAAI,EAAE,IAAI,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,QAAQ,EAAE,QAAQ;CACrB;;AACD,AAAA,IAAI,CAAC;EACD,WAAW,EDhBG,MAAM;ECiBpB,SAAS,EDbG,KAAK;ECcjB,eAAe,EAAE,MAAM;CAC1B;;AACD,AAAA,IAAI,CAAC;EACD,SAAS,EDbG,MAAM;ECclB,gBAAgB,EFhBL,OAAO;CEiBrB;;AAKD,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,KAAK;CACjB;;AACD,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CACnB;;AAKD,AAAA,QAAQ,EAAE,MAAM,EAAE,KAAK,CAAC;EACpB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,WAAW,ED1CG,MAAM;EC2CpB,MAAM,EAAE,IAAI;CACf",
     "sources": [
-        "../Scss/main.scss",
-        "../Scss/Basic/_Import.scss",
-        "../Scss/Variables/_Variables.scss",
-        "../Scss/Variables/_Colors.scss",
-        "../Scss/Variables/_Type.scss",
-        "../Scss/Components/_Components.scss",
-        "../Scss/Components/_Buttons.scss",
-        "../Scss/Components/_Shop-Cards.scss",
-        "../Scss/Components/_Info-Cards.scss"
+        "../scss/main.scss",
+        "../scss/Basic/_Import.scss",
+        "../scss/Variables/_Variables.scss",
+        "../scss/Variables/_Colors.scss",
+        "../scss/Variables/_Type.scss",
+        "../scss/Basic/_Reset.scss",
+        "../scss/Components/_Components.scss",
+        "../scss/Components/_Buttons.scss",
+        "../scss/Components/_Shop-Cards.scss",
+        "../scss/Components/_Info-Cards.scss",
+        "../scss/Basic/_Style.scss"
     ],
     "names": [],
     "file": "main.css"

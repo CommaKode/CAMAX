@@ -2,4 +2,44 @@
   font-family: bYekan;
   src: url(../../Font/Yekan.ttf);
 }
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+html {
+  font-family: bYekan;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea, button, input {
+  border: none;
+  outline: none;
+  font-family: bYekan;
+  resize: none;
+}
 /*# sourceMappingURL=main.css.map */
