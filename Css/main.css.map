@@ -2,15 +2,8 @@
     "version": 3,
     "mappings": "ACAA,UAAU;EACN,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,yBAAyB",
     "sources": [
-        "../Scss/main.scss",
-        "../Scss/Basic/_Import.scss",
-        "../Scss/Variables/_Variables.scss",
-        "../Scss/Variables/_Colors.scss",
-        "../Scss/Variables/_Type.scss",
-        "../Scss/Components/_Components.scss",
-        "../Scss/Components/_Buttons.scss",
-        "../Scss/Components/_Shop-Cards.scss",
-        "../Scss/Components/_Info-Cards.scss"
+        "../scss/main.scss",
+        "../scss/Basic/_Import.scss"
     ],
     "names": [],
     "file": "main.css"

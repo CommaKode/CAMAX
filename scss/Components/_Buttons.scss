@@ -1,7 +1,8 @@
-.hiroFirstButton{
-    width: 115px;
-    height: 40px;
-    border: 1px solid $hiroButtonsBorderColor;
-    border-radius: $radiusPrimary;
-
+.hiroFirstButton {
+  width: 115px;
+  height: 40px;
+  border: 1px solid $hiroButtonsBorderColor;
+  border-radius: $radiusPrimary;
+  font-family: $mainFontFamily;
+  text-align: center;
 }
