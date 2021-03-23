@@ -7,7 +7,11 @@
         "../Scss/Variables/_Variables.scss",
         "../Scss/Variables/_Colors.scss",
         "../Scss/Variables/_Type.scss",
+<<<<<<< HEAD
         "../Scss/Basic/_Reset.scss",
+=======
+        "../Scss/Variables/_Radius.scss",
+>>>>>>> 6183c9623a14f2803c3364fd80bc58748eb42cb7
         "../Scss/Components/_Components.scss",
         "../Scss/Components/_Buttons.scss",
         "../Scss/Components/_Shop-Cards.scss",
