@@ -42,4 +42,22 @@ textarea, button, input {
   font-family: bYekan;
   resize: none;
 }
+
+.shopBtn {
+  background-color: #ff3232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  font-size: 1.8rem;
+  color: #f1f1f1;
+  height: 40px;
+  width: 120px;
+}
 /*# sourceMappingURL=main.css.map */

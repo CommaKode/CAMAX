@@ -1,0 +1,11 @@
+.shopBtn {
+    background-color: $shopBtnColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: $mainFontSize;
+    color: $gray;
+    height: 40px;
+    width: 120px;
+}
