@@ -11,16 +11,34 @@
 }
 .hiroFirstBtn {
   display: flex;
-  width: 120px;
+  width: 115px;
   height: 40px;
-  padding: 5px 10px;
   border: 1px solid $hiroButtonsBorderColor;
-  border-radius: $btnRadius;
+  border-radius: $radiusPrimary;
   font-family: $mainFontFamily;
   color: $primaryColor;
   font-weight: $boldWeight;
   justify-content: center;
   align-items: center;
   background-color: $primaryColorLowOpacity;
+  padding: 5px 10px;
+  font-size: $btnFontSize;
+}
+.hiroSecondBtn {
+  display: flex;
+  width: 115px;
+  height: 40px;
+  border: 1px solid $hiroButtonsBorderColor;
+  border-radius: $radiusPrimary;
+  font-family: $mainFontFamily;
+  color: $darkBlue;
+  font-weight: $boldWeight;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: $btnFontSize;
+  width: 180px;
+  height: 40px;
+  padding: 5px 15px;
 }
 
