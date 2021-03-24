@@ -1,0 +1,28 @@
+body {
+    background-color: #f06544;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopCard {
+    height: 290px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    border-radius: $radiusPrimary;
+    overflow: visible;
+    
+    > img {
+        height: 140px;
+        width: 165px;
+        margin-top: 25px;
+    }
+    
+    > a {
+        transform: translateY(50%);
+    }
+
+}
