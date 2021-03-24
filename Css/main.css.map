@@ -10,6 +10,7 @@
         "../scss/Variables/_Radius.scss",
         "../scss/Variables/_Paddings.scss",
         "../scss/Variables/_Transitions.scss",
+        "../scss/Variables/_shadow.scss",
         "../scss/Components/_Components.scss",
         "../scss/Components/_Buttons.scss",
         "../scss/Components/_Shop-Cards.scss",
