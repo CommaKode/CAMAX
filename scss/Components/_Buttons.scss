@@ -1,20 +1,26 @@
 .shopBtn {
-    background-color: $shopBtnColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    font-size: $mainFontSize;
-    color: $gray;
-    height: 40px;
-    width: 120px;
-}
-
-.hiroFirstButton {
-  width: 115px;
+  background-color: $shopBtnColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: $mainFontSize;
+  color: $gray;
   height: 40px;
+  width: 120px;
+}
+.hiroFirstButton {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  padding: 5px 10px;
+
   border: 1px solid $hiroButtonsBorderColor;
-  border-radius: $radiusPrimary;
+  border-radius: $btnRadius;
   font-family: $mainFontFamily;
-  text-align: center;
+  color: $primaryColor;
+  font-weight: $boldWeight;
+  justify-content: center;
+  align-items: center;
+  background-color: $primaryColorLowOpacity;
 }
