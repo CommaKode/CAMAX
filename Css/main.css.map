@@ -8,6 +8,7 @@
         "../Scss/Variables/_Colors.scss",
         "../Scss/Variables/_Type.scss",
         "../Scss/Variables/_Radius.scss",
+        "../Scss/Variables/_Paddings.scss",
         "../Scss/Components/_Components.scss",
         "../Scss/Components/_Buttons.scss",
         "../Scss/Components/_Shop-Cards.scss",
