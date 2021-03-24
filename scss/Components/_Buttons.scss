@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .shopBtn {
     background-color: $shopBtnColor;
     display: flex;
@@ -8,4 +9,13 @@
     color: $gray;
     height: 40px;
     width: 120px;
+}
+
+.hiroFirstButton {
+  width: 115px;
+  height: 40px;
+  border: 1px solid $hiroButtonsBorderColor;
+  border-radius: $radiusPrimary;
+  font-family: $mainFontFamily;
+  text-align: center;
 }
