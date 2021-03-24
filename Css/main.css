@@ -54,11 +54,17 @@ textarea, button, input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 10px;
+  padding: 10px 20px;
   font-size: 1.8rem;
   color: #f1f1f1;
   height: 40px;
+  line-height: 40px;
   width: 120px;
+  border-radius: 10px;
+}
+
+.shopBtn span {
+  margin-top: 5px;
 }
 
 .hiroFirstButton {
