@@ -8,7 +8,11 @@
         "../../Scss/Variables/_Colors.scss",
         "../../Scss/Variables/_Type.scss",
         "../../Scss/Variables/_Radius.scss",
+<<<<<<< HEAD
         "../../Scss/Basic/_Reset.scss",
+=======
+        "../../Scss/Variables/_Paddings.scss",
+>>>>>>> 0b601f9b2ac2a68543859db575ef5a95b17bfe3a
         "../../Scss/Components/_Components.scss",
         "../../Scss/Components/_Buttons.scss",
         "../../Scss/Components/_Shop-Cards.scss",
