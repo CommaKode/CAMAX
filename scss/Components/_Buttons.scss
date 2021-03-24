@@ -3,11 +3,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: $btnPadding;
     font-size: $mainFontSize;
     color: $gray;
     height: 40px;
+    line-height: 40px;
     width: 120px;
+    border-radius: $btnRadius;
+
+    span {
+      margin-top: 5px;
+    }
 }
 
 .hiroFirstButton {
