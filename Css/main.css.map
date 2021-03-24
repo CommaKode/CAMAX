@@ -9,12 +9,20 @@
         "../scss/Variables/_Type.scss",
         "../scss/Variables/_Radius.scss",
         "../scss/Variables/_Paddings.scss",
+<<<<<<< HEAD
         "../scss/Basic/_Reset.scss",
         "../scss/Components/_Components.scss",
         "../scss/Components/_Buttons.scss",
         "../scss/Components/_Shop-Cards.scss",
         "../scss/Components/_Info-Cards.scss",
         "../scss/Basic/_Style.scss"
+=======
+        "../scss/Variables/_Transitions.scss",
+        "../scss/Components/_Components.scss",
+        "../scss/Components/_Buttons.scss",
+        "../scss/Components/_Shop-Cards.scss",
+        "../scss/Components/_Info-Cards.scss"
+>>>>>>> 3d52be229e0116813cf5bc16245bca9380d86e3d
     ],
     "names": [],
     "file": "main.css"
