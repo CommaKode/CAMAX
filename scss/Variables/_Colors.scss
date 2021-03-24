@@ -8,6 +8,7 @@ $gray :        #f1f1f1;
 $white :       #ffffff;
 
 $secondaryColor : lighten($primaryColor, 10%);
+$primaryColorLowOpacity:lighten($primaryColor, 45%);
 
 
 // defining section colors
