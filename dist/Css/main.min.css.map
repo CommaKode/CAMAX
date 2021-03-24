@@ -10,7 +10,11 @@
         "../../scss/Variables/_Radius.scss",
         "../../scss/Variables/_Paddings.scss",
         "../../scss/Variables/_Transitions.scss",
+<<<<<<< HEAD
         "../../scss/Basic/_Reset.scss",
+=======
+        "../../scss/Variables/_shadow.scss",
+>>>>>>> a3602ff1bf2541c2fe4581f0a3e3a85dc0a558c2
         "../../scss/Components/_Components.scss",
         "../../scss/Components/_Buttons.scss",
         "../../scss/Components/_Shop-Cards.scss",
