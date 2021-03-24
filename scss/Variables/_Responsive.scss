@@ -1,0 +1,19 @@
+$col-count: 12;
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+);
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    @for $i from 1 through $col-count {
+      .col-#{$breakpoint-name}-#{$i} {
+        width: (100% / $col-count) * $i;
+      }
+    }
+  }
+}
