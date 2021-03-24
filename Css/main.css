@@ -60,4 +60,13 @@ textarea, button, input {
   height: 40px;
   width: 120px;
 }
+
+.hiroFirstButton {
+  width: 115px;
+  height: 40px;
+  border: 1px solid #fe0000;
+  border-radius: 10px;
+  font-family: bYekan;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
