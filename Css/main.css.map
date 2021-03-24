@@ -2,6 +2,27 @@
     "version": 3,
     "mappings": "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",
     "sources": [
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "../Scss/main.scss",
+        "../Scss/Basic/_Import.scss",
+        "../Scss/Variables/_Variables.scss",
+        "../Scss/Variables/_Colors.scss",
+        "../Scss/Variables/_Type.scss",
+        "../Scss/Variables/_Radius.scss",
+<<<<<<< HEAD
+        "../Scss/Basic/_Reset.scss",
+=======
+        "../Scss/Variables/_Paddings.scss",
+>>>>>>> 0b601f9b2ac2a68543859db575ef5a95b17bfe3a
+        "../Scss/Components/_Components.scss",
+        "../Scss/Components/_Buttons.scss",
+        "../Scss/Components/_Shop-Cards.scss",
+        "../Scss/Components/_Info-Cards.scss",
+        "../Scss/Basic/_Style.scss"
+=======
+=======
+>>>>>>> d9066f623bf4545b9e389217d5fcd2995ddfbd19
         "../scss/main.scss",
         "../scss/Basic/_Import.scss",
         "../scss/Variables/_Variables.scss",
@@ -17,6 +38,20 @@
         "../scss/Components/_Shop-Cards.scss",
         "../scss/Components/_Info-Cards.scss",
         "../scss/Basic/_Style.scss"
+<<<<<<< HEAD
+=======
+        "../scss/Variables/_Transitions.scss",
+        "../scss/Components/_Components.scss",
+        "../scss/Components/_Buttons.scss",
+        "../scss/Components/_Shop-Cards.scss",
+        "../scss/Components/_Info-Cards.scss"
+<<<<<<< HEAD
+>>>>>>> 7423f2221e86bda1a6099946e3cacd1611524a57
+=======
+>>>>>>> 3d52be229e0116813cf5bc16245bca9380d86e3d
+>>>>>>> d9066f623bf4545b9e389217d5fcd2995ddfbd19
+=======
+>>>>>>> 74e223ce5caacd3a01f8372c2c22f8fb5074a7fa
     ],
     "names": [],
     "file": "main.css"
