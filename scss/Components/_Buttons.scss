@@ -1,5 +1,4 @@
 .shopBtn {
-<<<<<<< HEAD
   background-color: $shopBtnColor;
   display: flex;
   justify-content: space-between;
@@ -9,30 +8,12 @@
   color: $gray;
   height: 40px;
   width: 120px;
-=======
-    background-color: $shopBtnColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $btnPadding;
-    font-size: $mainFontSize;
-    color: $gray;
-    height: 40px;
-    line-height: 40px;
-    width: 120px;
-    border-radius: $btnRadius;
-
-    span {
-      margin-top: 5px;
-    }
->>>>>>> 983414a819765abf310e7820d5472d6ffb948cc3
 }
 .hiroFirstButton {
   display: flex;
   width: 120px;
   height: 40px;
   padding: 5px 10px;
-
   border: 1px solid $hiroButtonsBorderColor;
   border-radius: $btnRadius;
   font-family: $mainFontFamily;
