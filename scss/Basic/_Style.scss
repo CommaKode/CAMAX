@@ -1,0 +1,25 @@
+.h1mobile {
+    width: 100%;
+    font-family: $mainFontFamily;
+    color: $black;
+    font-size: $h1MobileFontSize;
+    font-weight: $boldWeight;
+    text-align: center;
+    span {
+        color: $primaryColor;
+    }
+}
+.h2mobile {
+    width: 100%;
+    display: block;
+    font-family: $mainFontFamily;
+    color: $black;
+    font-size: $h2MobileFontSize;
+    font-weight: $regWeight;
+    text-align: center;
+    
+    
+    span {
+        color: $primaryColor;
+  }
+}
