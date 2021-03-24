@@ -63,16 +63,45 @@ textarea, button, input {
   border-radius: 10px;
 }
 
-.shopBtn span {
-  margin-top: 5px;
+.shopBtn:hover {
+  background-color: #fe0000;
 }
 
-.hiroFirstButton {
+.shopBtn span {
+  margin-top: 10px;
+}
+
+.hiroFirstBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 115px;
   height: 40px;
   border: 1px solid #fe0000;
   border-radius: 10px;
   font-family: bYekan;
-  text-align: center;
+  color: #fe0000;
+  font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffe5e5;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+}
+
+.hiroSecondBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #061928;
+  font-weight: 600;
+  width: 180px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

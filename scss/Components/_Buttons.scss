@@ -9,6 +9,8 @@
   height: 40px;
   line-height: 40px;
   width: 120px;
+  border-radius: $btnRadius;
+  transition: $btnTransition;
   
   &:hover {
     background-color: $primaryColor;
