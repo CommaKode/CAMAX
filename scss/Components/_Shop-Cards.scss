@@ -1,9 +1,3 @@
-body {
-    background-color: #f06544;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .shopCard {
     height: 290px;
     width: 250px;
@@ -14,6 +8,7 @@ body {
     background-color: $white;
     border-radius: $radiusPrimary;
     overflow: visible;
+    box-shadow: $cardShadow;
     
     > span {
         font-size: $h3FontSize;

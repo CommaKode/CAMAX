@@ -575,19 +575,6 @@ textarea, button, input {
   background-color: transparent;
 }
 
-body {
-  background-color: #f06544;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .shopCard {
   height: 290px;
   width: 250px;
@@ -607,6 +594,8 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   overflow: visible;
+  -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+          box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
 }
 
 .shopCard > span {
@@ -660,6 +649,39 @@ body {
   margin-right: auto;
   text-align: right;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+footer {
+  background-color: #061928;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-links > a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+=======
+>>>>>>> fd124419ba6a596c71a960462ecdea3351cbafa3
+=======
 
 .header {
   width: 100%;
@@ -687,4 +709,5 @@ body {
   width: 21.88px;
   height: 27.7px;
 }
+>>>>>>> 387ff3446d66bf085d7371ffc28b371620ebb0c3
 /*# sourceMappingURL=main.css.map */
