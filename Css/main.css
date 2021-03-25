@@ -669,6 +669,7 @@ textarea, button, input {
   text-align: right;
 }
 
+<<<<<<< HEAD
 .header {
   width: 100%;
   height: 65px;
@@ -791,6 +792,8 @@ footer {
   margin: 5px 0;
 }
 
+=======
+>>>>>>> 39f5e3b7891782d6798dc96d2472696a910bfbc8
 .dn {
   display: none;
 }
