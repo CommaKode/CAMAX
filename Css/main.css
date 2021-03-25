@@ -490,7 +490,6 @@
   }
 }
 
-<<<<<<< HEAD
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -633,8 +632,6 @@ textarea, button, input {
           transform: translateY(50%);
 }
 
-=======
->>>>>>> da8f0537d93f6266a9a0c452f12d90aec8bee57a
 .infoCard {
   position: relative;
   height: 315px;
@@ -709,7 +706,8 @@ footer {
 }
 
 .footer-links > div {
-  margin: 25px 0;
+  padding: 15px 0;
+  border-bottom: solid 1px #7D98A1;
 }
 
 .footer-links button {
@@ -719,6 +717,78 @@ footer {
 
 .footer-links > a {
   color: #f1f1f1;
+}
+
+.footer-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.footer-address .address-icons {
+  background-color: #f1f1f1;
+  height: 200px;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
+  padding: 25px 0;
+}
+
+.footer-address .address-icons svg {
+  height: 25px;
+}
+
+.footer-address .address {
+  height: 200px;
+  padding: 25px 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 20px;
+}
+
+.footer-address .address span {
+  line-height: 25px;
+  color: #f1f1f1;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.footer-logo svg {
+  width: 120px;
+  height: 50px;
+}
+
+.footer-copyRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: solid 1px #7D98A1;
+}
+
+.footer-copyRight span {
+  color: #7D98A1;
+  margin: 5px 0;
 }
 
 .dn {

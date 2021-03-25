@@ -26,7 +26,6 @@ $breakpoints: (
 
 /*** offset ***/
 @for $i from 1 through 12 {
-<<<<<<< HEAD
     .offset-#{$first-breakpoint}-#{$i} {
         margin-left: (100% / $col-count) * $i;
     }
@@ -40,20 +39,5 @@ $breakpoints: (
             }
         }
     }
-=======
-  .offset-#{$first-breakpoint}-#{$i} {
-      margin-left: (100% / $col-count) * $i;
-  }
-}
-
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @media screen and (min-width: $breakpoint-value) {
-      @for $i from 1 through $col-count {
-          .offset-#{$breakpoint-name}-#{$i} {
-              margin-left: (100% / $col-count) * $i;
-          }
-      }
-  }
->>>>>>> da8f0537d93f6266a9a0c452f12d90aec8bee57a
 }
 
