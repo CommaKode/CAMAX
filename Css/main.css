@@ -246,7 +246,6 @@
   }
 }
 
-<<<<<<< HEAD
 /*** offset ***/
 .offset-sm-1 {
   margin-left: 8.33333%;
@@ -491,8 +490,6 @@
   }
 }
 
-=======
->>>>>>> f96ab6018e3f2e49ef093e971462652b7e6c2a75
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -533,7 +530,6 @@ textarea, button, input {
   resize: none;
 }
 
-<<<<<<< HEAD
 .shopBtn {
   background-color: #ff3232;
   display: -webkit-box;
@@ -636,8 +632,6 @@ textarea, button, input {
           transform: translateY(50%);
 }
 
-=======
->>>>>>> f96ab6018e3f2e49ef093e971462652b7e6c2a75
 .infoCard {
   position: relative;
   height: 315px;
@@ -673,7 +667,6 @@ textarea, button, input {
   margin-left: auto;
   margin-right: auto;
   text-align: right;
-<<<<<<< HEAD
 }
 
 .header {
@@ -706,19 +699,6 @@ textarea, button, input {
 footer {
   background-color: #061928;
   border-radius: 20px 20px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer-links {
@@ -732,6 +712,21 @@ footer {
 .footer-links button {
   background-color: transparent;
   color: #f1f1f1;
+}
+
+.footer-links > a {
+  color: #f1f1f1;
+}
+
+.dn {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.df {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,16 +738,17 @@ footer {
           align-items: center;
 }
 
-.footer-links > a {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #f1f1f1;
-=======
->>>>>>> f96ab6018e3f2e49ef093e971462652b7e6c2a75
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,10 +3,6 @@ footer {
     //add the radius to variables
     border-radius: 20px 20px 0 0;
     //add the radius to variables
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 .footer-links {
     // add the padding to variables
@@ -19,14 +15,8 @@ footer {
     button {
         background-color: transparent;
         color: $gray;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     > a {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
         color: $gray;
     }
 }
