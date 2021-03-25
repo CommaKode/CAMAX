@@ -6,8 +6,11 @@ footer {
     margin: 10px 0;
 
     >div {
-        padding: 15px 0;
+        //make a variable
+        padding: 10px 0;
+        //make a variable
         border-bottom: solid 1px $lightBlue;
+        //make a variable
     }
     button {
         background-color: transparent;
