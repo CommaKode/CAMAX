@@ -9,24 +9,19 @@ footer {
     align-items: center;
 }
 .footer-links {
-    // width: 100%;
     // add the padding to variables
-    // padding: 10px 7%;
+    padding: 10px 7%;
     // add the padding to variables
 
     >div {
         margin: 25px 0;
     }
     button {
-        // width: 100%;
         background-color: transparent;
         color: $gray;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    ul {
-        display: none;
     }
     > a {
         width: 100%;

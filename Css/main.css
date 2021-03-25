@@ -470,6 +470,10 @@ footer {
           align-items: center;
 }
 
+.footer-links {
+  padding: 10px 7%;
+}
+
 .footer-links > div {
   margin: 25px 0;
 }
@@ -486,10 +490,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.footer-links ul {
-  display: none;
 }
 
 .footer-links > a {
