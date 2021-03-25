@@ -713,7 +713,7 @@ a, button {
   fill: #1f1f1f;
 }
 
-.ham-menu > svg line {
+#ham-menu > svg line {
   stroke: #1f1f1f;
 }
 
