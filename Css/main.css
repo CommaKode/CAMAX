@@ -509,17 +509,11 @@ footer {
           align-items: center;
 }
 
-.footer-links {
-  width: 100%;
-  padding: 10px 7%;
-}
-
 .footer-links > div {
   margin: 25px 0;
 }
 
 .footer-links button {
-  width: 100%;
   background-color: transparent;
   color: #f1f1f1;
   display: -webkit-box;
