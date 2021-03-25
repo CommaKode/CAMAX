@@ -529,6 +529,7 @@ textarea, button, input {
   outline: none;
   font-family: bYekan;
   resize: none;
+<<<<<<< HEAD
 }
 
 .shopBtn {
@@ -631,6 +632,8 @@ textarea, button, input {
 .shopCard > a {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+=======
+>>>>>>> 21fec2e5398d2f7b471311863b9d351c387bff93
 }
 
 .infoCard {
@@ -916,5 +919,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.container-width {
+  padding: 0 7%;
 }
 /*# sourceMappingURL=main.css.map */
