@@ -246,46 +246,6 @@
   }
 }
 
-<<<<<<< HEAD
-*, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-html {
-  font-family: bYekan;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-size: 1.8rem;
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-  display: block;
-}
-
-ul {
-  list-style: none;
-}
-
-textarea, button, input {
-  border: none;
-  outline: none;
-  font-family: bYekan;
-  resize: none;
-=======
 /*** offset ***/
 .offset-sm-1 {
   margin-left: 8.33333%;
@@ -528,7 +488,46 @@ textarea, button, input {
   .offset-xxxl-12 {
     margin-left: 100%;
   }
->>>>>>> 4e35729b0e3717953fdb4a520bf55c08e6cca747
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+html {
+  font-family: bYekan;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea, button, input {
+  border: none;
+  outline: none;
+  font-family: bYekan;
+  resize: none;
 }
 
 .infoCard {
@@ -601,5 +600,9 @@ textarea, button, input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.container-width {
+  padding: 0 7%;
 }
 /*# sourceMappingURL=main.css.map */
