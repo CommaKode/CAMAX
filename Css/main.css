@@ -246,6 +246,7 @@
   }
 }
 
+<<<<<<< HEAD
 /*** offset ***/
 .offset-sm-1 {
   margin-left: 8.33333%;
@@ -490,6 +491,8 @@
   }
 }
 
+=======
+>>>>>>> f96ab6018e3f2e49ef093e971462652b7e6c2a75
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -530,6 +533,7 @@ textarea, button, input {
   resize: none;
 }
 
+<<<<<<< HEAD
 .shopBtn {
   background-color: #ff3232;
   display: -webkit-box;
@@ -632,6 +636,8 @@ textarea, button, input {
           transform: translateY(50%);
 }
 
+=======
+>>>>>>> f96ab6018e3f2e49ef093e971462652b7e6c2a75
 .infoCard {
   position: relative;
   height: 315px;
@@ -667,6 +673,7 @@ textarea, button, input {
   margin-left: auto;
   margin-right: auto;
   text-align: right;
+<<<<<<< HEAD
 }
 
 .header {
@@ -745,5 +752,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #f1f1f1;
+=======
+>>>>>>> f96ab6018e3f2e49ef093e971462652b7e6c2a75
 }
 /*# sourceMappingURL=main.css.map */
