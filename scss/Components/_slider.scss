@@ -1,0 +1,59 @@
+.slider{
+    position: relative;
+    width: 100%;
+    height: 542px;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    &::before{
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        background-color: &darkblue;
+    }
+    img{
+        position: absolute;
+        width: 422px;
+        height: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+      
+    }
+    .information{
+        position: absolute;
+        right: 18%;
+        // top: 150px;
+    }
+    h6{
+        font-size: $h1MobileFontSize;
+        position: absolute;
+        right: 18%;
+        top: 10%;
+    }
+    h5{
+        position: absolute;
+        font-size: $h2FontSize;
+        opacity: .5;
+        left: 20%;
+        top: 1%;
+    }
+    span{
+        position: absolute;
+        // top: 50%;
+        &:first-child{
+            left: 10%;
+        }
+        &:last-child{
+            right: 10%;
+        }
+    }
+    a{
+        position: absolute;
+    }
+    .priceSlider{
+        position: absolute;
+        left: 25%;
+        font-size: $mainFontSize;
+    }
+}
