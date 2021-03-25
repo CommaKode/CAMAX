@@ -1,59 +1,73 @@
-.slider{
-    position: relative;
-    width: 100%;
-    height: 542px;
-    display: flex;
-    text-align: right;
-    align-items: center;
-    &::before{
-        content: "";
-        display: block;
-        width: 50%;
-        height: 100%;
-        background-color: &darkblue;
+.slider {
+  position: relative;
+  width: 100%;
+  height: 542px;
+  display: flex;
+  text-align: right;
+  align-items: center;
+  transform: scale(0.9);
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: $darkBlue;
+    border-radius: $sliderRadius;
+  }
+
+  img {
+    position: absolute;
+    width: 422px;
+    height: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .information {
+    position: absolute;
+    right: 18%;
+  }
+  h6 {
+    font-size: $h1MobileFontSize;
+    position: absolute;
+    right: 18%;
+    top: 10%;
+  }
+  h5 {
+    position: absolute;
+    font-size: $h1FontSize;
+    opacity: 0.5;
+    left: 25%;
+    transform: translateX(-50%);
+    top: 12%;
+    color: $white;
+  }
+  span {
+    position: absolute;
+    // top: 50%;
+    &:first-child {
+      left: 10%;
     }
-    img{
-        position: absolute;
-        width: 422px;
-        height: 320px;
-        left: 50%;
-        transform: translateX(-50%);
-      
+    &:last-child {
+      right: 10%;
     }
-    .information{
-        position: absolute;
-        right: 18%;
-        // top: 150px;
+  }
+  a {
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    transform: translateX(-50%);
+  }
+  .priceSlider {
+    position: absolute;
+    left: 25%;
+    transform: translateX(-25%);
+    font-size: $h3FontSize;
+    color: $white;
+    &::before {
+      content: "ریال ";
+      position: absolute;
+      display: block;
+      right: 105%;
     }
-    h6{
-        font-size: $h1MobileFontSize;
-        position: absolute;
-        right: 18%;
-        top: 10%;
-    }
-    h5{
-        position: absolute;
-        font-size: $h2FontSize;
-        opacity: .5;
-        left: 20%;
-        top: 1%;
-    }
-    span{
-        position: absolute;
-        // top: 50%;
-        &:first-child{
-            left: 10%;
-        }
-        &:last-child{
-            right: 10%;
-        }
-    }
-    a{
-        position: absolute;
-    }
-    .priceSlider{
-        position: absolute;
-        left: 25%;
-        font-size: $mainFontSize;
-    }
+  }
 }
