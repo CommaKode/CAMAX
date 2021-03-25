@@ -649,39 +649,6 @@ textarea, button, input {
   margin-right: auto;
   text-align: right;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-footer {
-  background-color: #061928;
-  border-radius: 20px 20px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-links > a {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-=======
->>>>>>> fd124419ba6a596c71a960462ecdea3351cbafa3
-=======
 
 .header {
   width: 100%;
@@ -709,5 +676,61 @@ footer {
   width: 21.88px;
   height: 27.7px;
 }
->>>>>>> 387ff3446d66bf085d7371ffc28b371620ebb0c3
+
+footer {
+  background-color: #061928;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-links {
+  width: 100%;
+  padding: 10px 7%;
+}
+
+.footer-links > div {
+  margin: 25px 0;
+}
+
+.footer-links button {
+  width: 100%;
+  background-color: transparent;
+  color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-links ul {
+  display: none;
+}
+
+.footer-links > a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #f1f1f1;
+}
 /*# sourceMappingURL=main.css.map */
