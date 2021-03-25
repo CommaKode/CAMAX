@@ -490,6 +490,7 @@
   }
 }
 
+<<<<<<< HEAD
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -632,6 +633,8 @@ textarea, button, input {
           transform: translateY(50%);
 }
 
+=======
+>>>>>>> da8f0537d93f6266a9a0c452f12d90aec8bee57a
 .infoCard {
   position: relative;
   height: 315px;
