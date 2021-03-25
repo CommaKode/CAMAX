@@ -511,7 +511,7 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background-color: #f1f1f1;
 }
 
@@ -543,7 +543,7 @@ textarea, button, input {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #f1f1f1;
   height: 40px;
   line-height: 40px;
@@ -561,38 +561,42 @@ textarea, button, input {
   margin-top: 10px;
 }
 
-.hiroFirstBtn {
+.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 115px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 40px;
-  border: 1px solid #fe0000;
-  border-radius: 10px;
-  font-family: bYekan;
-  color: #fe0000;
+  border: 1px solid;
+  padding: 10px 20px;
   font-weight: 600;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+
+.firstBtn {
+  border-color: #fe0000;
+  color: #fe0000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffe5e5;
-  font-size: 1.8rem;
-  padding: 10px 20px;
 }
 
-.hiroSecondBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.secondBtn {
   color: #061928;
-  font-weight: 600;
-  width: 180px;
-  height: 40px;
-  padding: 10px 20px;
   background-color: transparent;
+  border-color: #061928;
+}
+
+.secondBtn svg {
+  margin-right: 15px;
+}
+
+.secondBtn svg path {
+  fill: #061928;
 }
 
 .shopCard {
@@ -619,7 +623,7 @@ textarea, button, input {
 }
 
 .shopCard > span {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .shopCard > img {
@@ -635,38 +639,27 @@ textarea, button, input {
 
 .infoCard {
   position: relative;
-  height: 315px;
   background-color: #ffffff;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 340px;
 }
 
-.infoCard > svg {
-  margin-top: 17px;
-  margin-left: auto;
-  margin-right: auto;
+.infoCard img {
+  max-width: 150px;
 }
 
-.infoCard > h1 {
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 158px;
-  margin-left: auto;
-  margin-right: 31.9px;
+.infoCard > h5 {
+  font-size: 2rem;
+  color: #1f1f1f;
+  margin-top: 10px;
 }
 
 .infoCard > p {
-  font-size: 0.75rem;
+  margin-top: 10px;
+  font-size: 1.4rem;
   color: #6c6060;
-  width: 301.49px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: right;
 }
 
@@ -775,7 +768,7 @@ a, button {
   border: solid 1px #f1f1f1;
   border-radius: 50px;
   height: 45px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .nav-login a {
@@ -787,6 +780,7 @@ a, button {
 footer {
   background-color: #061928;
   border-radius: 20px 20px 0 0;
+  margin-top: 40px;
 }
 
 .footer-links {
@@ -926,7 +920,7 @@ footer {
 
 .slider h5 {
   position: absolute;
-  font-size: 4.6rem;
+  font-size: 3.8rem;
   opacity: 0.5;
   left: 25%;
   -webkit-transform: translateX(-50%);
@@ -960,7 +954,7 @@ footer {
   left: 25%;
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #ffffff;
 }
 
@@ -1007,5 +1001,26 @@ footer {
 
 .container-width {
   padding: 0 7%;
+}
+
+.hero img {
+  margin-top: 60px;
+}
+
+.hero a {
+  margin-top: 20px;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  margin-top: 40px;
+}
+
+.hero h1 span {
+  color: #fe0000;
+}
+
+.hero h2 {
+  font-size: 3.2rem;
 }
 /*# sourceMappingURL=main.css.map */

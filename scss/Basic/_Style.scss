@@ -1,0 +1,22 @@
+//
+// hero section
+//
+
+.hero {
+    img {
+        margin-top: 60px;
+    }
+    a {
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: $h1FontSize;
+        margin-top: 40px;
+        span {
+            color: $primaryColor;
+        }
+    }
+    h2 {
+        font-size: $h2FontSize;
+    }
+}

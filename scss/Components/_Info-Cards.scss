@@ -1,29 +1,22 @@
 .infoCard {
   position: relative;
-  height: 315px;
   background-color: $white;
   border-radius: $radiusPrimary;
-  display: flex;
-  flex-direction: column;
-
-  > svg {
-    margin-top: 17px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 340px;
+  img {
+    max-width: 150px;
   }
-  > h1 {
-    font-size: $h2MobileFontSize;
-    color: white;
-    margin-top: 158px;
-    margin-left: auto;
-    margin-right: 31.9px;
+  > h5 {
+    font-size: $h3FontSize;
+    color: $black;
+    margin-top: 10px;
   }
   > p {
-    font-size: $mainMobileFontSize;
+    margin-top: 10px;
+    font-size: $smallFontSize;
     color: $infoTextColor;
-    width: 301.49px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: right;
   }
 }

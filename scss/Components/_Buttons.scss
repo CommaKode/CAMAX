@@ -19,28 +19,31 @@
     margin-top: 10px;
   }
 }
-.hiroFirstBtn {
+.btn {
   display: flex;
-  width: 115px;
+  justify-content: space-between;
   height: 40px;
-  border: 1px solid $hiroButtonsBorderColor;
-  border-radius: $radiusPrimary;
-  font-family: $mainFontFamily;
-  color: $primaryColor;
+  border: 1px solid;
+  padding:$btnPadding;
   font-weight: $boldWeight;
-  justify-content: center;
+  border-radius: $radiusPrimary;
+  font-size: $btnFontSize;
+}
+.firstBtn {
+  border-color: $hiroButtonsBorderColor;
+  color: $primaryColor;
   align-items: center;
   background-color: $primaryColorLowOpacity;
-  font-size: $btnFontSize;
-  padding:$btnPadding;
 }
-.hiroSecondBtn {
-  display: flex;
+.secondBtn {
   color: $darkBlue;
-  font-weight: $boldWeight;
-  width: 180px;
-  height: 40px;
-  padding:$btnPadding;
   background-color: transparent;
+  border-color: $darkBlue;
+  svg {
+    margin-right: 15px;
+    path {
+      fill: $darkBlue;
+    }
+  }
 }
 
