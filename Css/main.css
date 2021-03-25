@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: bYekan;
   src: url(../../Font/Yekan.ttf);
@@ -802,6 +803,17 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.slider::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #061928;
+  border-radius: 30px;
 }
 
 .slider img {
@@ -827,10 +839,13 @@ footer {
 
 .slider h5 {
   position: absolute;
-  font-size: 3.6rem;
+  font-size: 4.6rem;
   opacity: .5;
-  left: 20%;
-  top: 1%;
+  left: 25%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 12%;
+  color: #ffffff;
 }
 
 .slider span {
@@ -847,12 +862,26 @@ footer {
 
 .slider a {
   position: absolute;
+  left: 25%;
+  top: 60%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .slider .priceSlider {
   position: absolute;
   left: 25%;
-  font-size: 1.8rem;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+.slider .priceSlider::before {
+  content: "ریال ";
+  position: absolute;
+  display: block;
+  right: 105%;
 }
 
 .dn {
