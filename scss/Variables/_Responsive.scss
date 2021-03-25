@@ -24,3 +24,20 @@ $breakpoints: (
     }
 }
 
+/*** offset ***/
+@for $i from 1 through 12 {
+    .offset-#{$first-breakpoint}-#{$i} {
+        margin-left: (100% / $col-count) * $i;
+    }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @media screen and (min-width: $breakpoint-value) {
+        @for $i from 1 through $col-count {
+            .offset-#{$breakpoint-name}-#{$i} {
+                margin-left: (100% / $col-count) * $i;
+            }
+        }
+    }
+}
+
