@@ -531,6 +531,10 @@ textarea, button, input {
   resize: none;
 }
 
+button {
+  background-color: transparent;
+}
+
 .shopBtn {
   background-color: #ff3232;
   display: -webkit-box;
@@ -788,16 +792,11 @@ footer {
 }
 
 .footer-links > div {
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: solid 1px #7D98A1;
 }
 
-.footer-links button {
-  background-color: transparent;
-  color: #f1f1f1;
-}
-
-.footer-links > a {
+.footer-links button, .footer-links a {
   color: #f1f1f1;
 }
 
@@ -847,7 +846,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .footer-logo svg {

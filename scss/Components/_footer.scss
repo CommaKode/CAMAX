@@ -1,36 +1,29 @@
 footer {
     background-color: $sectionColor;
     border-radius: $footerRadius;
-    margin-top: 40px;
+    margin-top: $divMargin;
 }
 .footer-links {
     margin: 10px 0;
 
     >div {
-        //make a variable
-        padding: 10px 0;
-        //make a variable
-        border-bottom: solid 1px $lightBlue;
-        //make a variable
+        padding: $menuBtnPadding;
+        border-bottom: $borderLine
     }
-    button {
-        background-color: transparent;
-        color: $gray;
-    }
-    > a {
+    button, a {
         color: $gray;
     }
 }
 .footer-address {
     display: flex;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: $partMargin;
     .address-icons {
         background-color: $gray;
         height: 200px;
         width: 50px;
-        border-radius: 15px 0 0 15px;
-        padding: 25px 0;
+        border-radius: $footerAddressRadius;
+        padding: $addressPadding;
 
         svg {
             height: 25px;
@@ -38,9 +31,9 @@ footer {
     }
     .address {
         height: 200px;
-        padding: 25px 0;
+        padding: $addressPadding;
         align-items: flex-end;
-        margin-right: 20px;
+        margin-right: $partMargin;
         span {
             line-height: 25px;
             color: $gray;
@@ -51,7 +44,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: $elementMargin 0;
     svg {
         width: 120px;
         height: 50px;
@@ -61,7 +54,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid 1px $lightBlue;
+    border-top: $borderLine;
     span {
         color: $lightBlue;
         margin: 5px 0;

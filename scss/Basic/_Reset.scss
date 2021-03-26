@@ -44,4 +44,7 @@ textarea, button, input {
     font-family: $mainFontFamily;
     resize: none;
 }
+button {
+    background-color: transparent;
+}
 
