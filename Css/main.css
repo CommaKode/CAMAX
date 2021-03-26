@@ -604,8 +604,8 @@ button {
 }
 
 .shopCard {
-  height: 290px;
-  width: 250px;
+  height: 280px;
+  width: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,6 +624,7 @@ button {
   overflow: visible;
   -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
           box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+  margin-right: 20px;
 }
 
 .shopCard > span {
@@ -639,6 +640,10 @@ button {
 .shopCard > a {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+}
+
+.about-us {
+  margin-top: 60px;
 }
 
 .infoCard {
@@ -1023,5 +1028,55 @@ footer {
 
 .hero h2 {
   font-size: 3.2rem;
+}
+
+.shop-section {
+  background-color: #061928;
+  margin-top: 60px;
+  padding-left: 0;
+  scrollbar-width: none;
+}
+
+.shop-section ::-webkit-scrollbar {
+  display: none;
+}
+
+.shop-section .shop {
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-section .shop .illustration {
+  width: 150px;
+}
+
+.shop-section .shop .illustration img {
+  height: 60px;
+  display: block;
+}
+
+.shop-section .shop .illustration h5 {
+  margin-top: 15px;
+  color: #f1f1f1;
+  font-weight: 400;
+}
+
+.shop-section .shop .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */
