@@ -5,6 +5,9 @@ header {
   align-items: center;
   background-color: $white;
   position: relative;
+  > a, > button {
+    z-index: 1000;
+  }
 }
 
 //nav bar when toggle is off
@@ -14,8 +17,6 @@ a, button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  z-index: 1000;
 }
 .nav-logo {
   width: 130px;
@@ -28,7 +29,7 @@ a, button {
 // svg colors before toggle is on that shoud change afterwards
 
 #logo-text {
-  fill: $black
+  fill: $black;
 }
 #nav-cart {
   fill: $black;
@@ -47,8 +48,9 @@ a, button {
   height: 100vh;
   background-color: $black;
   // nav bar off
-  transform: translatey(-100%);
+  // transform: translatey(-100%);
   transition: $primaryTransition;
+  z-index: 100;
 }
 
 // search
@@ -74,18 +76,17 @@ a, button {
   }
 }
 .nav-links-container {
-  margin-top: 20px;
+  margin-top: $partMargin;
   a {
     color: $gray;
-    border-bottom: solid 1px $lightBlue;
+    border-bottom: $borderLine;
     padding: 10px 0;
   }
 }
 .nav-login {
-  margin-top: 40px;
+  margin-top: $divMargin;
   button {
     color: $gray;
-    background-color: transparent;
     border: solid 1px $gray;
     border-radius: 50px;
     height: 45px;
@@ -93,7 +94,7 @@ a, button {
   }
   a {
     color: $gray;
-    margin-top: 10px;
+    margin-top: $elementMargin;
     font-size: $smallFontSize;
   }
 }
