@@ -58,3 +58,23 @@
         }
     }
 }
+
+//
+// about us
+//
+
+.about-us {
+    h3 {
+        font-size: $h2FontSize;
+        color: $black;
+        span {
+            color : $primaryColor;
+        }
+    }
+    p {
+        margin-top: $partMargin;
+        color: $black;
+        font-size: $mainFontSize;
+        font-weight: 400;
+    }
+}

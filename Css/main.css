@@ -1079,4 +1079,20 @@ footer {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+.about-us h3 {
+  font-size: 3.2rem;
+  color: #1f1f1f;
+}
+
+.about-us h3 span {
+  color: #fe0000;
+}
+
+.about-us p {
+  margin-top: 20px;
+  color: #1f1f1f;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
 /*# sourceMappingURL=main.css.map */
