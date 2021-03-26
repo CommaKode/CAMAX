@@ -48,7 +48,7 @@ a, button {
   height: 100vh;
   background-color: $black;
   // nav bar off
-  // transform: translatey(-100%);
+  transform: translatey(-100%);
   transition: $primaryTransition;
   z-index: 100;
 }
