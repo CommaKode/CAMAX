@@ -604,8 +604,8 @@ button {
 }
 
 .shopCard {
-  height: 290px;
-  width: 250px;
+  height: 280px;
+  width: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,6 +624,7 @@ button {
   overflow: visible;
   -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
           box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+  margin-right: 20px;
 }
 
 .shopCard > span {
@@ -639,6 +640,10 @@ button {
 .shopCard > a {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+}
+
+.about-us {
+  margin-top: 60px;
 }
 
 .infoCard {
@@ -678,6 +683,10 @@ header {
   position: relative;
 }
 
+header > a, header > button {
+  z-index: 1000;
+}
+
 a, button {
   height: 100%;
   display: -webkit-box;
@@ -689,8 +698,6 @@ a, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: transparent;
-  z-index: 1000;
 }
 
 .nav-logo {
@@ -725,6 +732,7 @@ a, button {
           transform: translatey(-100%);
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+  z-index: 100;
 }
 
 .nav-container {
@@ -768,7 +776,6 @@ a, button {
 
 .nav-login button {
   color: #f1f1f1;
-  background-color: transparent;
   border: solid 1px #f1f1f1;
   border-radius: 50px;
   height: 45px;
@@ -777,7 +784,7 @@ a, button {
 
 .nav-login a {
   color: #f1f1f1;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1.4rem;
 }
 
@@ -1021,5 +1028,71 @@ footer {
 
 .hero h2 {
   font-size: 3.2rem;
+}
+
+.shop-section {
+  background-color: #061928;
+  margin-top: 60px;
+  padding-left: 0;
+  scrollbar-width: none;
+}
+
+.shop-section ::-webkit-scrollbar {
+  display: none;
+}
+
+.shop-section .shop {
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-section .shop .illustration {
+  width: 150px;
+}
+
+.shop-section .shop .illustration img {
+  height: 60px;
+  display: block;
+}
+
+.shop-section .shop .illustration h5 {
+  margin-top: 15px;
+  color: #f1f1f1;
+  font-weight: 400;
+}
+
+.shop-section .shop .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.about-us h3 {
+  font-size: 3.2rem;
+  color: #1f1f1f;
+}
+
+.about-us h3 span {
+  color: #fe0000;
+}
+
+.about-us p {
+  margin-top: 20px;
+  color: #1f1f1f;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

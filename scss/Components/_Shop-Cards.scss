@@ -1,6 +1,6 @@
 .shopCard {
-    height: 290px;
-    width: 250px;
+    height: 280px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,6 +9,7 @@
     border-radius: $radiusPrimary;
     overflow: visible;
     box-shadow: $cardShadow;
+    margin-right: $partMargin;
     
     > span {
         font-size: $h3FontSize;
@@ -23,5 +24,4 @@
     > a {
         transform: translateY(50%);
     }
-
 }
