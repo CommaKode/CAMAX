@@ -8,6 +8,10 @@ $breakpoints: (
     xxxl: 1600px,
 );
 
+@function media($break){
+    @return map-get($breakpoints, $break)
+}
+
 @for $i from 1 through 12 {
     .col-#{$first-breakpoint}-#{$i} {
         width: (100% / $col-count) * $i;
