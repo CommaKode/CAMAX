@@ -1,7 +1,6 @@
 .productGrid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-    // grid-template-columns:auto auto auto;
     grid-row-gap: 4rem;
  background-color: black;
  .shopCard{
@@ -10,7 +9,6 @@
  }
 }
 .filter{
-    // display: block;
     background-color: red;
     height: 100px;
 }
