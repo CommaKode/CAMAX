@@ -672,6 +672,14 @@ button {
   text-align: right;
 }
 
+#nav-bar {
+  display: none;
+}
+
+#ham-menu {
+  fill: black;
+}
+
 footer {
   background-color: #061928;
   border-radius: 20px 20px 0 0;
