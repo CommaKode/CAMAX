@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-#nav-bar{
-    display: none;
-}
-
-header{
-    width: 100%;
-    height: 65px;
-    background-color:$navColor;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-=======
 header {
   width: 100%;
   height: 65px;
@@ -115,4 +98,3 @@ a, button {
     font-size: $smallFontSize;
   }
 }
->>>>>>> 53e8a575861063d6fc35ab26c67b16af84beb40d
