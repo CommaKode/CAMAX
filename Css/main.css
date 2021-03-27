@@ -676,8 +676,23 @@ button {
   display: none;
 }
 
-#ham-menu {
-  fill: black;
+header {
+  width: 100%;
+  height: 65px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {
@@ -863,6 +878,25 @@ footer {
   right: 105%;
 }
 
+.productGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-row-gap: 4rem;
+  background-color: black;
+}
+
+.productGrid .shopCard {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter {
+  background-color: red;
+  height: 100px;
+}
+
 .dn {
   display: none;
 }
@@ -899,6 +933,13 @@ footer {
 
 .container-width {
   padding: 0 7%;
+}
+
+.productContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero img {
