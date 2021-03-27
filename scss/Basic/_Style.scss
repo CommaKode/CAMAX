@@ -71,9 +71,9 @@
             color : $primaryColor;
         }
     }
-    p {
+    > p {
         margin-top: $partMargin;
-        color: $black;
+        color: $lightBlue;
         font-size: $mainFontSize;
         font-weight: 400;
     }
