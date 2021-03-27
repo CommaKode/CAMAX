@@ -971,25 +971,6 @@ footer {
   right: 105%;
 }
 
-.productGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-row-gap: 4rem;
-  background-color: black;
-}
-
-.productGrid .shopCard {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.filter {
-  background-color: red;
-  height: 100px;
-}
-
 .dn {
   display: none;
 }
@@ -1026,13 +1007,6 @@ footer {
 
 .container-width {
   padding: 0 7%;
-}
-
-.productContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .hero img {
@@ -1115,9 +1089,9 @@ footer {
   color: #fe0000;
 }
 
-.about-us > p {
+.about-us p {
   margin-top: 20px;
-  color: #7D98A1;
+  color: #1f1f1f;
   font-size: 1.6rem;
   font-weight: 400;
 }
