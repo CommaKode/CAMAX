@@ -44,4 +44,19 @@ $breakpoints: (
         }
     }
 }
+@for $i from 1 through 12 {
+    .offright-#{$first-breakpoint}-#{$i} {
+        margin-right: (100% / $col-count) * $i;
+    }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @media screen and (min-width: $breakpoint-value) {
+        @for $i from 1 through $col-count {
+            .offright-#{$breakpoint-name}-#{$i} {
+                margin-right: (100% / $col-count) * $i;
+            }
+        }
+    }
+}
 
