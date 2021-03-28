@@ -113,13 +113,16 @@
   }
   ul {
     display: flex;
-    justify-content: space-between;
+    span{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     background-color: $filterULcolor;
     border-radius: $radiusPrimary;
     margin-bottom: $filterUlMargin;
     padding: $filterUlPadding;
     border: $filterUlBorder;
-    align-items: center;
     color: $white;
     white-space: nowrap;
     transition: all 1s;

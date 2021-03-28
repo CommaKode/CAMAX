@@ -9,18 +9,15 @@
     position: absolute;
     bottom: 0;
 }
-<<<<<<< HEAD
 // filter mixim
 
 @mixin filterInSmall {
     @media (max-width: #{$filterInSmall}){
         @content
     }
-=======
-
+}
 @mixin card($radius) {
     background-color: $white;
     border-radius: $radius;
     box-shadow: $cardShadow;
->>>>>>> 766f627574d5dbbabe323a4ca799879cb964053e
 }
