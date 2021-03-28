@@ -1,4 +1,11 @@
 @media screen and (min-width: media(lg)){
+    //font size classes 
+    .h1 {font-size: lgFont(h1);}
+    .h2 {font-size: lgFont(h2);}
+    .h3 {font-size: lgFont(h3);}
+    .primaryFont {font-size: lgFont(primary);}
+    .smallFont {font-size: lgFont(small);}
+
     // changing display none to flex
     .dn-to-df {
         display: flex;
@@ -30,12 +37,6 @@
         }
         .hero-h {
             align-items: flex-start;
-            h1 {
-                font-size: lgFont(h1);
-            }
-            h2 {
-                font-size: lgFont(h2);
-            }
         }
     }
 
@@ -76,17 +77,10 @@
 }
 
 @media screen and (min-width: media(xxxl)){
-    //
-    // hero section xxxl
-    //
-    .hero {
-        .hero-h {
-            h1 {
-                font-size: xxxlFont(h1);
-            }
-            h2 {
-                font-size: xxxlFont(h2);
-            }
-        }
-    }
+        //font size classes 
+        .h1 {font-size: xxxlFont(h1);}
+        .h2 {font-size: xxxlFont(h2);}
+        .h3 {font-size: xxxlFont(h3);}
+        .primaryFont {font-size: xxxlFont(primary);}
+        .smallFont {font-size: xxxlFont(small);}
 }

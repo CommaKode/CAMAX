@@ -1243,16 +1243,8 @@ footer {
   margin-top: 60px;
 }
 
-.hero .hero-h h1 {
-  font-size: 3.8rem;
-}
-
 .hero .hero-h h1 span {
   color: #fe0000;
-}
-
-.hero .hero-h h2 {
-  font-size: 3.2rem;
 }
 
 .shop-section {
@@ -1314,7 +1306,6 @@ footer {
 }
 
 .about-us > div > h3 {
-  font-size: 3.2rem;
   color: #1f1f1f;
 }
 
@@ -1325,7 +1316,6 @@ footer {
 .about-us > div > p {
   margin-top: 20px;
   color: #1f1f1f;
-  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -1363,6 +1353,21 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .h1 {
+    font-size: 4.8rem;
+  }
+  .h2 {
+    font-size: 3.8rem;
+  }
+  .h3 {
+    font-size: 3.3rem;
+  }
+  .primaryFont {
+    font-size: 1.8rem;
+  }
+  .smallFont {
+    font-size: 1.6rem;
+  }
   .dn-to-df {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1406,12 +1411,6 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .hero .hero-h h1 {
-    font-size: 4.8rem;
-  }
-  .hero .hero-h h2 {
-    font-size: 3.8rem;
-  }
   .about-us .info-cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1448,11 +1447,20 @@ footer {
 }
 
 @media screen and (min-width: 1600px) {
-  .hero .hero-h h1 {
+  .h1 {
     font-size: 6.8rem;
   }
-  .hero .hero-h h2 {
+  .h2 {
     font-size: 4.2rem;
+  }
+  .h3 {
+    font-size: 3.8rem;
+  }
+  .primaryFont {
+    font-size: 2rem;
+  }
+  .smallFont {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

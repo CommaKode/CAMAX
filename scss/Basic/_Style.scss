@@ -29,13 +29,9 @@
     .hero-h {
         margin-top: $sectionMargin;
         h1 {
-            font-size: $h1FontSize;
             span {
                 color: $primaryColor;
             }
-        }
-        h2 {
-            font-size: $h2FontSize;
         }
     }
 }
@@ -87,7 +83,6 @@
     > div {
         margin-top: 0;
         > h3 {
-            font-size: $h2FontSize;
             color: $black;
             span {
                 color : $primaryColor;
@@ -96,7 +91,6 @@
         > p {
             margin-top: $partMargin;
             color: $black;
-            font-size: $mainFontSize;
             font-weight: 400;
         }
     }
