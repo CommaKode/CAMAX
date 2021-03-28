@@ -96,6 +96,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
   grid-row-gap: 4rem;
+  height: fit-content;
   .shopCard {
     margin-left: auto;
     margin-right: auto;
@@ -104,7 +105,7 @@
 .filter {
   display: flex;
   flex-direction: column;
-  background-color:$filterBgcolor;
+  background-color: $filterBgcolor;
   border-radius: $filterContainerRadius;
   height: fit-content;
   padding: $filterContainerPadding;
@@ -113,10 +114,36 @@
   }
   ul {
     display: flex;
-    span{
+    flex-direction: column;
+    height:35px;
+    position: relative;
+    transition: all .5s ease;
+    > span {
+      padding-right: 10px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      svg{
+        padding-bottom: 10px;
+      }
+    }
+    .filterItems {
+      display: flex;
+        flex-direction: column;
+        position: relative;
+        
+      span{
+        margin-right: 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        transition: opacity .1s;
+        transition: transform 1s;
+        top: -33px;
+        opacity: 0;
+        label{
+          padding-right: 10px;
+        }
+      }
     }
     background-color: $filterULcolor;
     border-radius: $radiusPrimary;
@@ -125,9 +152,34 @@
     border: $filterUlBorder;
     color: $white;
     white-space: nowrap;
-    transition: all 1s;
-    &:hover{
-      padding: 5px 5px 50px 5px;
+    &:hover {
+      height: 160px;
+      .filterItems{
+        span{
+          opacity: 1;
+          &:nth-child(1){
+            
+            transform: translateY(100%);
+          }
+          &:nth-child(2){
+            transform: translateY(200%);
+            
+          }
+          &:nth-child(3){
+            transform: translateY(300%);
+            
+          }
+          &:nth-child(4){
+            transform: translateY(400%);
+            
+          }
+          &:nth-child(5){
+            transform: translateY(500%);
+
+          }
+        }
+    
+      }
     }
   }
 }

@@ -1074,7 +1074,7 @@ header a, header button {
 .nav-bottom {
   background-color: #ffffff;
   width: 100%;
-  height: 100px;
+  height: 50px;
 }
 
 .nav-bottom > li {
@@ -1514,6 +1514,9 @@ footer {
   -ms-grid-columns: (minmax(22.5rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
   grid-row-gap: 4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .productGrid .shopCard {
@@ -1547,25 +1550,102 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 35px;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   background-color: rgba(241, 241, 241, 0.49);
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 5px 5px;
   border: solid 1px #ffffff;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.filter ul > span {
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter ul > span svg {
+  padding-bottom: 10px;
+}
+
+.filter ul .filterItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.filter ul .filterItems span {
+  margin-right: 10px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
-  white-space: nowrap;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  top: -33px;
+  opacity: 0;
+}
+
+.filter ul .filterItems span label {
+  padding-right: 10px;
 }
 
 .filter ul:hover {
-  padding: 5px 5px 50px 5px;
+  height: 160px;
+}
+
+.filter ul:hover .filterItems span {
+  opacity: 1;
+}
+
+.filter ul:hover .filterItems span:nth-child(1) {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.filter ul:hover .filterItems span:nth-child(2) {
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+}
+
+.filter ul:hover .filterItems span:nth-child(3) {
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+}
+
+.filter ul:hover .filterItems span:nth-child(4) {
+  -webkit-transform: translateY(400%);
+          transform: translateY(400%);
+}
+
+.filter ul:hover .filterItems span:nth-child(5) {
+  -webkit-transform: translateY(500%);
+          transform: translateY(500%);
 }
 
 @media screen and (min-width: 768px) {
