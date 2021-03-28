@@ -1,4 +1,9 @@
 @media screen and (min-width: media(lg)){
+    .dn-to-df {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .mobile-nav {
         display: none;
     }
