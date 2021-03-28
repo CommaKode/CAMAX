@@ -1437,10 +1437,9 @@ footer {
 .productGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(22.5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
   grid-row-gap: 4rem;
-  background-color: #56089e;
 }
 
 .productGrid .shopCard {
@@ -1456,7 +1455,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #061928;
+  background-color: #214252;
   border-radius: 30px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1481,9 +1480,18 @@ footer {
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 5px 5px;
+  border: solid 1px #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #ffffff;
+  white-space: nowrap;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.filter ul:hover {
+  padding: 5px 5px 50px 5px;
 }
 
 @media screen and (min-width: 768px) {
