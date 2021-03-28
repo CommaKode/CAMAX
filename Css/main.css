@@ -1456,7 +1456,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #236af0;
+  background-color: #061928;
   border-radius: 30px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1481,6 +1481,9 @@ footer {
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 5px 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
