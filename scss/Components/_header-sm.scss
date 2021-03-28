@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 65px;
+  height: $navTopHeight;
   background-color: $white;
   position: relative;
   .nav-top {
@@ -52,14 +52,16 @@ header {
 // mobile nav bar when the toggle is on
 
 #nav-bar {
+  // nav bar off
+  transform: translatey(-100%);
+
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: $black;
-  // nav bar off
-  transform: translatey(-100%);
   transition: $primaryTransition;
   z-index: 100;
 }
@@ -67,7 +69,7 @@ header {
 // mobile search
 
 .nav-container {
-  margin-top: 85px;
+  margin-top: $navTopHeight + 20px;
 }
 #searching {
   height: 35px;
@@ -147,7 +149,7 @@ header {
 
 .nav-bottom {
   background-color: $white;
-  @include box(100%, 50px);
+  @include box(100%, $navBottomHeight);
   > li {
     height: 100%;
     position: relative;
@@ -192,7 +194,6 @@ header {
     min-width: 100%;
     transition: $primaryTransition;
     transform-origin: top;
-    // transition-delay: .2s;
     li {
       a {
         padding: 10px 20px;

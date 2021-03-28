@@ -5,7 +5,31 @@
         justify-content: space-between;
         align-items: center;
     }
+    .column-to-row {
+        flex-direction: row;
+    }
+    //
+    //nav bar
+    //
     .mobile-nav {
         display: none;
+    }
+    //changing mobile nav bar display to none
+    #nav-bar {
+        display: none;
+    }
+
+    //
+    // hero section
+    //
+    .hero {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .hero-btns {
+            flex-direction: row;
+        }
+        .hero-h {
+            align-items: flex-start;
+        }
     }
 }

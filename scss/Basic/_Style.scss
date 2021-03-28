@@ -3,21 +3,34 @@
 //
 
 .hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - (#{$navTopHeight + $navBottomHeight}));
+    min-height: 600px;
+
+    .hero-btns {
+        flex-direction: column;
+        margin-top: $partMargin;
+        a {
+            margin-top: $elementMargin;
+        }
+    }
     img {
         margin-top: 60px;
     }
-    a {
-        margin-top: 20px;
-    }
-    h1 {
-        font-size: $h1FontSize;
-        margin-top: 40px;
-        span {
-            color: $primaryColor;
+    .hero-h {
+        margin-top: $sectionMargin;
+        h1 {
+            font-size: $h1FontSize;
+            span {
+                color: $primaryColor;
+            }
         }
-    }
-    h2 {
-        font-size: $h2FontSize;
+        h2 {
+            font-size: $h2FontSize;
+        }
     }
 }
 
