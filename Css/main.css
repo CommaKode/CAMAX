@@ -805,7 +805,7 @@ header a, header button {
 
 .desktop-nav .left-nav svg {
   height: 25px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .desktop-nav .left-nav svg path {
@@ -822,6 +822,45 @@ header a, header button {
 
 .desktop-nav .desktop-search input {
   border-bottom: solid 1px #7D98A1;
+  width: 175px;
+  padding: 0 10px 5px 10px;
+}
+
+.nav-bottom {
+  background-color: #ffffff;
+  width: 100%;
+  height: 50px;
+}
+
+.nav-bottom li {
+  height: 100%;
+}
+
+.nav-bottom a {
+  height: 100%;
+  color: #1f1f1f;
+  font-weight: 400;
+  height: 100%;
+  position: relative;
+}
+
+.nav-bottom a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 140%;
+  height: 2px;
+  background-color: #fe0000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.nav-bottom a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 footer {

@@ -125,7 +125,7 @@ header {
   .left-nav {
     svg {
       height: 25px;
-      margin-right: $elementMargin;
+      margin-right: $partMargin;
       path {
         fill: $black;
       }
@@ -138,6 +138,35 @@ header {
     position: relative;
     input {
       border-bottom: $borderLine;
+      width: 175px;
+      padding: 0 10px 5px 10px;
+    }
+  }
+}
+
+// desktop nav bottom
+
+.nav-bottom {
+  background-color: $white;
+  @include box(100%, 50px);
+  li {
+    height: 100%;
+  }
+  a {
+    height: 100%;
+    color: $black;
+    font-weight: 400;
+    height: 100%;
+    position: relative;
+    &::before {
+      @include psoudo();
+      @include box(140%, 2px);
+      background-color: $primaryColor;
+      transform: scaleX(0);
+      transition: $primaryTransition;
+    }
+    &:hover::before {
+      transform: scaleX(1);
     }
   }
 }
