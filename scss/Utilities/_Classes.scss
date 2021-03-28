@@ -21,3 +21,14 @@
 .dn-to-df {
     display: none;
 }
+<<<<<<< HEAD
+=======
+.no-psoudo {
+    &::after {
+        display: none !important;
+    }
+    &::before {
+        display: none !important;
+    }
+}
+>>>>>>> 09b7f32bb0c3fffd1cc94a112fdd7cfa079a740e

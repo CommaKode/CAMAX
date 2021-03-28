@@ -151,17 +151,24 @@ header {
   > li {
     height: 100%;
     position: relative;
-    width: 100%;
+    min-width: fit-content;
     &::before {
       @include psoudo();
       @include box(100%, 2px);
       background-color: $primaryColor;
-      transform: scaleX(0);
       transition: $primaryTransition;
+      transform-origin: right;
+      transform: scaleX(0);
     }
     &:hover {
+      a {
+        color: $primaryColor;
+      }
       .drop-down {
         transform: scaleY(1);
+        &::before {
+          transform: scaleX(1);
+        }
       }
       &::before {
         transform: scaleX(1);
@@ -175,16 +182,20 @@ header {
       height: 100%;
     }
   }
-  
+
   // drop down menu
   .drop-down {
     @include card($dropDownRadius);
     transform: scaleY(0);
     position: absolute;
+    right: 0;
     min-width: 100%;
+    transition: $primaryTransition;
+    transform-origin: top;
+    // transition-delay: .2s;
     li {
       a {
-        padding: 10px;
+        padding: 10px 20px;
         color: $black;
         white-space: nowrap;
         &:hover {
@@ -192,6 +203,15 @@ header {
         }
       }
     }
-    
+    &::before {
+      @include psoudo();
+      transition: $primaryTransition;
+      transform-origin: right;
+      width: 100%;
+      top: -2px;
+      height: 2px;
+      background-color: $primaryColor;
+      transform: scaleX(0);
+    }
   }
 }
