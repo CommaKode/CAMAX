@@ -9,3 +9,9 @@
     position: absolute;
     bottom: 0;
 }
+
+@mixin card($radius) {
+    background-color: $white;
+    border-radius: $radius;
+    box-shadow: $cardShadow;
+}
