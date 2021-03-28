@@ -9,7 +9,7 @@ $breakpoints: (
 );
 
 @function media($break){
-    @return map-get($breakpoints, $break)
+    @return map-get($breakpoints, $break);
 }
 
 @for $i from 1 through 12 {

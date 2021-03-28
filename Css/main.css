@@ -676,18 +676,27 @@ header {
   width: 100%;
   height: 65px;
   background-color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffffff;
   position: relative;
 }
 
-header > a, header > button {
+header .nav-top {
+  width: 100%;
+  height: 100%;
+}
+
+header .mobile-nav {
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mobile-nav > a, header .mobile-nav > button {
   z-index: 1000;
 }
 
-a, button {
+header a, header button {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,6 +795,33 @@ a, button {
   color: #f1f1f1;
   margin-top: 15px;
   font-size: 1.4rem;
+}
+
+.desktop-nav {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.desktop-nav .left-nav svg {
+  height: 25px;
+  margin-right: 15px;
+}
+
+.desktop-nav .left-nav svg path {
+  fill: #1f1f1f;
+}
+
+.desktop-nav .left-nav button svg {
+  margin-right: 0;
+}
+
+.desktop-nav .desktop-search {
+  position: relative;
+}
+
+.desktop-nav .desktop-search input {
+  border-bottom: solid 1px #7D98A1;
 }
 
 footer {
@@ -1094,5 +1130,22 @@ footer {
   color: #1f1f1f;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

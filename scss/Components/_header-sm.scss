@@ -2,21 +2,32 @@ header {
   width: 100%;
   height: 65px;
   background-color: $white;
-  align-items: center;
-  background-color: $white;
   position: relative;
-  > a, > button {
-    z-index: 1000;
+  .nav-top {
+    @include box(100%);
   }
+  
+  //
+  // mobile nav bar
+  //
+
+  .mobile-nav {
+    @include box(100%);
+    align-items: center;
+    // position: absolute;
+    > a, > button {
+      z-index: 1000;
+    }
+  }
+  a, button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-//nav bar when toggle is off
+//mobile nav bar when toggle is off
 
-a, button {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .nav-logo {
   width: 130px;
@@ -38,7 +49,7 @@ a, button {
   stroke: $black;
 }
 
-// nav bar when the toggle is on
+// mobile nav bar when the toggle is on
 
 #nav-bar {
   position: absolute;
@@ -53,7 +64,7 @@ a, button {
   z-index: 100;
 }
 
-// search
+// mobile search
 
 .nav-container {
   margin-top: 85px;
@@ -75,6 +86,9 @@ a, button {
     }
   }
 }
+
+// ham menu nav links
+
 .nav-links-container {
   margin-top: $partMargin;
   a {
@@ -96,5 +110,34 @@ a, button {
     color: $gray;
     margin-top: $elementMargin;
     font-size: $smallFontSize;
+  }
+}
+
+//
+// desktop
+//
+
+// forcing desktop navbar display to be display:block
+// and coding top desktop navbar
+.desktop-nav {
+  display: none;
+  @include box(100%);
+  .left-nav {
+    svg {
+      height: 25px;
+      margin-right: $elementMargin;
+      path {
+        fill: $black;
+      }
+    }
+    button svg {
+      margin-right: 0;
+    }
+  }
+  .desktop-search {
+    position: relative;
+    input {
+      border-bottom: $borderLine;
+    }
   }
 }
