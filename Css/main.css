@@ -491,6 +491,26 @@
   }
 }
 
+.h1 {
+  font-size: 3.8rem;
+}
+
+.h2 {
+  font-size: 3.2rem;
+}
+
+.h3 {
+  font-size: 2rem;
+}
+
+.primaryFont {
+  font-size: 1.6rem;
+}
+
+.smallFont {
+  font-size: 1.4rem;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
