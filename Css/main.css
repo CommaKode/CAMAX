@@ -850,15 +850,26 @@ header a, header button {
   width: 100%;
   height: 2px;
   background-color: #fe0000;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.nav-bottom > li:hover a {
+  color: #fe0000;
 }
 
 .nav-bottom > li:hover .drop-down {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+}
+
+.nav-bottom > li:hover .drop-down::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .nav-bottom > li:hover::before {
@@ -882,17 +893,39 @@ header a, header button {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   position: absolute;
+  right: 0;
   min-width: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .nav-bottom .drop-down li a {
-  padding: 10px;
+  padding: 10px 20px;
   color: #1f1f1f;
   white-space: nowrap;
 }
 
 .nav-bottom .drop-down li a:hover {
   color: #fe0000;
+}
+
+.nav-bottom .drop-down::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  width: 100%;
+  top: -2px;
+  height: 2px;
+  background-color: #fe0000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
 }
 
 footer {
