@@ -108,12 +108,13 @@
   background-color: rgb(82, 122, 197);
   border-radius: $filterContainerRadius;
   height: fit-content;
-  padding: 33px 20px;
+  padding: $filterContainerPadding;
   @include filterInSmall {
     display: none;
   }
   ul {
     display: flex;
     justify-content: space-between;
+  
   }
 }
