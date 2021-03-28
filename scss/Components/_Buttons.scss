@@ -1,0 +1,49 @@
+.shopBtn {
+  background-color: $shopBtnColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $btnPadding;
+  font-size: $mainFontSize;
+  color: $gray;
+  height: 40px;
+  line-height: 40px;
+  width: 120px;
+  border-radius: $btnRadius;
+  transition: $btnTransition;
+  
+  &:hover {
+    background-color: $primaryColor;
+  }
+  span {
+    margin-top: 10px;
+  }
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border: 1px solid;
+  padding:$btnPadding;
+  font-weight: $boldWeight;
+  border-radius: $radiusPrimary;
+  font-size: $btnFontSize;
+}
+.firstBtn {
+  border-color: $hiroButtonsBorderColor;
+  color: $primaryColor;
+  align-items: center;
+  background-color: $primaryColorLowOpacity;
+}
+.secondBtn {
+  color: $darkBlue;
+  background-color: transparent;
+  border-color: $darkBlue;
+  svg {
+    margin-right: 15px;
+    path {
+      fill: $darkBlue;
+    }
+  }
+}
+

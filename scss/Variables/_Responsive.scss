@@ -8,6 +8,10 @@ $breakpoints: (
     xxxl: 1600px,
 );
 
+@function media($break){
+    @return map-get($breakpoints, $break);
+}
+
 @for $i from 1 through 12 {
     .col-#{$first-breakpoint}-#{$i} {
         width: (100% / $col-count) * $i;
@@ -26,18 +30,33 @@ $breakpoints: (
 
 /*** offset ***/
 @for $i from 1 through 12 {
-  .offset-#{$first-breakpoint}-#{$i} {
-      margin-left: (100% / $col-count) * $i;
-  }
+    .offset-#{$first-breakpoint}-#{$i} {
+        margin-left: (100% / $col-count) * $i;
+    }
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @media screen and (min-width: $breakpoint-value) {
-      @for $i from 1 through $col-count {
-          .offset-#{$breakpoint-name}-#{$i} {
-              margin-left: (100% / $col-count) * $i;
-          }
-      }
-  }
+    @media screen and (min-width: $breakpoint-value) {
+        @for $i from 1 through $col-count {
+            .offset-#{$breakpoint-name}-#{$i} {
+                margin-left: (100% / $col-count) * $i;
+            }
+        }
+    }
+}
+@for $i from 1 through 12 {
+    .offright-#{$first-breakpoint}-#{$i} {
+        margin-right: (100% / $col-count) * $i;
+    }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @media screen and (min-width: $breakpoint-value) {
+        @for $i from 1 through $col-count {
+            .offright-#{$breakpoint-name}-#{$i} {
+                margin-right: (100% / $col-count) * $i;
+            }
+        }
+    }
 }
 

@@ -1,0 +1,23 @@
+.dn {
+    display: none;
+}
+.db {
+    display: block;
+}
+.df {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row
+}
+.container-width {
+    padding: $containerPadding;
+}
+.dn-to-df {
+    display: none;
+}

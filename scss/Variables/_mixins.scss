@@ -1,5 +1,5 @@
 @mixin filterInSmall {
-    @media (min-width: #{$filterInSmall}){
+    @media (max-width: #{$filterInSmall}){
         @content
     }
 }
