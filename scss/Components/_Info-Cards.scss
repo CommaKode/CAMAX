@@ -1,14 +1,14 @@
-.about-us {
-  margin-top: $sectionMargin;
-}
 .infoCard {
   position: relative;
   @include card($cardRadius);
-  margin-top: 20px;
+  margin-top: $partMargin;
   padding: 20px;
   max-width: 340px;
+  max-height: 340px;
+  display: block;
   img {
-    max-width: 150px;
+    max-width: 160px;
+    max-height: 80px;
   }
   > h5 {
     font-size: $h3FontSize;
