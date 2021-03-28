@@ -1,29 +1,26 @@
 // defining color codes
 
-$primaryColor :#fe0000;
-$black :       #1f1f1f;
-$darkBlue :    #061928;
-$lightBlue :   #7D98A1;
-$gray :        #f1f1f1;
-$white :       #ffffff;
-$infoTextColor:#6c6060;
-
-
-$secondaryColor : lighten($primaryColor, 10%);
-$primaryColorLowOpacity:lighten($primaryColor, 45%);
-
+$primaryColor: #fe0000;
+$black: #1f1f1f;
+$darkBlue: #061928;
+$lightBlue: #7d98a1;
+$gray: #f1f1f1;
+$white: #ffffff;
+$infoTextColor: #6c6060;
+$blue: #214252;
+$secondaryColor: lighten($primaryColor, 10%);
+$primaryColorLowOpacity: lighten($primaryColor, 45%);
 
 // defining section colors
 
-$backgroundColor : $gray;
-$sectionColor : $darkBlue;
-$shopBtnColor : $secondaryColor;
-$cardColor : $white;
-$navColor : $white;
-$textColorBlack : $black;
-$textColorWhite : $gray;
-$hiroButtonsBorderColor: $primaryColor; 
-
+$backgroundColor: $gray;
+$sectionColor: $darkBlue;
+$shopBtnColor: $secondaryColor;
+$cardColor: $white;
+$navColor: $white;
+$textColorBlack: $black;
+$textColorWhite: $gray;
+$hiroButtonsBorderColor: $primaryColor;
 
 // products colors
 $filterULcolor: rgba(241, 241, 241, 0.49);
