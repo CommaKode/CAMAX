@@ -1457,7 +1457,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #527ac5;
-  height: 100px;
   border-radius: 30px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
