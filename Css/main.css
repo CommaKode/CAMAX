@@ -1153,6 +1153,14 @@ footer {
   display: none;
 }
 
+.no-psoudo::after {
+  display: none !important;
+}
+
+.no-psoudo::before {
+  display: none !important;
+}
+
 .hero img {
   margin-top: 60px;
 }

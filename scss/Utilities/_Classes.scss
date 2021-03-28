@@ -21,3 +21,11 @@
 .dn-to-df {
     display: none;
 }
+.no-psoudo {
+    &::after {
+        display: none !important;
+    }
+    &::before {
+        display: none !important;
+    }
+}
