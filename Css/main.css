@@ -896,11 +896,11 @@ footer {
   transition: opacity .2s;
 }
 
-.slider:hover {
+.range-slider:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.range-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -909,7 +909,7 @@ footer {
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.range-slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   background: #4CAF50;
