@@ -837,9 +837,7 @@ header a, header button {
 .nav-bottom > li {
   height: 100%;
   position: relative;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  width: 100%;
 }
 
 .nav-bottom > li::before {
