@@ -5,8 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: $white;
-    border-radius: $radiusPrimary;
+    @include card($cardRadius);
     overflow: visible;
     box-shadow: $cardShadow;
     margin-right: $partMargin;

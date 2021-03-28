@@ -3,8 +3,7 @@
 }
 .infoCard {
   position: relative;
-  background-color: $white;
-  border-radius: $radiusPrimary;
+  @include card($cardRadius);
   margin-top: 20px;
   padding: 20px;
   max-width: 340px;

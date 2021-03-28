@@ -3,8 +3,14 @@ $filterUlBorder:solid 1px $white;
 
 // border radius
 $radiusPrimary:10px;
+<<<<<<< HEAD
 $sliderRadius:30px; 
 $filterContainerRadius:30px; 
+=======
+$cardRadius: 15px;
+$sliderRadius:30px;
+>>>>>>> 766f627574d5dbbabe323a4ca799879cb964053e
 $btnRadius : $radiusPrimary;
 $footerRadius : 20px 20px 0 0;
+$dropDownRadius : 0 0 $radiusPrimary $radiusPrimary;
 $footerAddressRadius : 15px 0 0 15px;
