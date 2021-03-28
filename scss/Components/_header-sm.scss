@@ -147,7 +147,7 @@ header {
 
 .nav-bottom {
   background-color: $white;
-  @include box(100%, 50px);
+  @include box(100%, 100px);
   li {
     height: 100%;
   }
