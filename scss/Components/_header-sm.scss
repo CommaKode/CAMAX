@@ -175,6 +175,8 @@ header {
       height: 100%;
     }
   }
+  
+  // drop down menu
   .drop-down {
     @include card($dropDownRadius);
     transform: scaleY(0);
