@@ -1,0 +1,11 @@
+@mixin box($width, $height : $width) {
+    width: $width;
+    height: $height;
+};
+
+@mixin psoudo() {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
