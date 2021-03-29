@@ -5,10 +5,13 @@ footer {
 }
 .footer-links {
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
     >div {
         padding: $menuBtnPadding;
-        border-bottom: $borderLine
+        border-bottom: $borderLine;
     }
     button, a {
         color: $gray;

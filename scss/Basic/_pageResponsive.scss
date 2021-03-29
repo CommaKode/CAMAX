@@ -73,6 +73,26 @@
     .aboutus-bg {
         height: 800px;
     }
+    .footer-links {
+        flex-direction: row;
+        > div {
+            border : none;
+            ul {
+                margin-top: $partMargin;
+                margin-right: $partMargin;
+                list-style-type: disc;
+                li {
+                    color: $lightBlue;
+                }
+            }
+        }
+        button span {
+            display: none;
+        }
+    }
+    .dn {
+        display: block;
+    }
 }
 
 @media screen and (min-width: media(xxxl)){

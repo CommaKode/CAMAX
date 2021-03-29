@@ -958,6 +958,16 @@ footer {
 
 .footer-links {
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer-links > div {
@@ -1439,6 +1449,29 @@ footer {
   }
   .aboutus-bg {
     height: 800px;
+  }
+  .footer-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-links > div {
+    border: none;
+  }
+  .footer-links > div ul {
+    margin-top: 20px;
+    margin-right: 20px;
+    list-style-type: disc;
+  }
+  .footer-links > div ul li {
+    color: #7D98A1;
+  }
+  .footer-links button span {
+    display: none;
+  }
+  .dn {
+    display: block;
   }
 }
 
