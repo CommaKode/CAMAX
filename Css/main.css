@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: bYekan;
-  src: url(../../Font/Yekan.ttf);
+  src: url(../../Font/IRANYekanRegular.ttf);
 }
 
 .col-sm-1 {
@@ -492,11 +492,11 @@
 }
 
 .h1 {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
 }
 
 .h2 {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .h3 {
@@ -504,11 +504,11 @@
 }
 
 .primaryFont {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .smallFont {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 *, *::after, *::before {
@@ -531,7 +531,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   background-color: #f1f1f1;
 }
 
@@ -572,7 +572,7 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #f1f1f1;
   height: 40px;
   line-height: 40px;
@@ -602,7 +602,7 @@ h1, h2, h3, h4, h5 {
   padding: 10px 20px;
   font-weight: 600;
   border-radius: 10px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
@@ -748,7 +748,7 @@ header a, header button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .nav-logo {
@@ -831,13 +831,13 @@ header a, header button {
   border: solid 1px #f1f1f1;
   border-radius: 50px;
   height: 45px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .nav-login a {
   color: #f1f1f1;
   margin-top: 15px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .desktop-nav {
@@ -1002,7 +1002,7 @@ footer {
 }
 
 footer a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .footer-links {
@@ -1157,7 +1157,7 @@ footer a {
 
 .slider h5 {
   position: absolute;
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   opacity: 0.5;
   left: 25%;
   -webkit-transform: translateX(-50%);
@@ -1429,25 +1429,25 @@ footer a {
 
 @media screen and (min-width: 768px) {
   .h1 {
-    font-size: 4.8rem;
+    font-size: 4.2rem;
   }
   .h2 {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
   }
   .h3 {
-    font-size: 3.3rem;
+    font-size: 2.8rem;
   }
   .primaryFont {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   header a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .smallFont {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   footer a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .dn-to-df {
     display: -webkit-box;
@@ -1566,7 +1566,7 @@ footer a {
 
 @media screen and (min-width: 1600px) {
   .h1 {
-    font-size: 6.8rem;
+    font-size: 6.2rem;
   }
   .h2 {
     font-size: 4.2rem;
@@ -1575,16 +1575,16 @@ footer a {
     font-size: 3.8rem;
   }
   .primaryFont {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   header a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .smallFont {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   footer a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   header {
     height: 85px;
