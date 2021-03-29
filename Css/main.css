@@ -1581,71 +1581,32 @@ footer {
   padding-bottom: 10px;
 }
 
-.filter ul .filterItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.filterItems {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  top: -19px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px 0 10px 0;
 }
 
-.filter ul .filterItems span {
-  margin-right: 10px;
-  position: absolute;
+.filterItems span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: opacity .1s;
-  transition: opacity .1s;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  top: -33px;
-  opacity: 0;
 }
 
-.filter ul .filterItems span label {
+.filterItems span label {
   padding-right: 10px;
-}
-
-.filter ul:hover {
-  height: 160px;
-}
-
-.filter ul:hover .filterItems span {
-  opacity: 1;
-}
-
-.filter ul:hover .filterItems span:nth-child(1) {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-.filter ul:hover .filterItems span:nth-child(2) {
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
-}
-
-.filter ul:hover .filterItems span:nth-child(3) {
-  -webkit-transform: translateY(300%);
-          transform: translateY(300%);
-}
-
-.filter ul:hover .filterItems span:nth-child(4) {
-  -webkit-transform: translateY(400%);
-          transform: translateY(400%);
-}
-
-.filter ul:hover .filterItems span:nth-child(5) {
-  -webkit-transform: translateY(500%);
-          transform: translateY(500%);
+  color: #1f1f1f;
 }
 
 @media screen and (min-width: 768px) {
