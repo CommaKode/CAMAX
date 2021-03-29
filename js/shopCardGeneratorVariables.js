@@ -1,13 +1,5 @@
 //
 //
-// number of cards
-//
-//
-
-let numberOfCards = 13;
-
-//
-//
 // lists
 //
 //
@@ -60,6 +52,14 @@ let priceMonitors = [
   "1780000",
   "1780000",
 ];
+//
+//
+// number of cards
+//
+//
+
+let numberOfCards = monitorNames.length;
+
 
 //
 //
