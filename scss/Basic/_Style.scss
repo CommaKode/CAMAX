@@ -81,7 +81,7 @@
 //
 
 .about-us {
-    margin-top: $sectionMargin;
+    margin-top: $sectionMargin + $sectionMargin +$divMargin;
     > div {
         margin-top: 0;
         > h3 {
@@ -108,7 +108,7 @@
     height: auto;
 }
 .aboutus-bg {
-    margin-top: $sectionMargin;
+    margin-top: $sectionMargin + $sectionMargin;
     position: absolute;
     width: 80%;
     height: 900px;

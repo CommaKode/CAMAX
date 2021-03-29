@@ -80,16 +80,15 @@
 
 }
 @media screen and (min-width: media(xxl)){
-    // container width
+    // container width xxl
     .container-width {padding: $containerPaddingD;}
-    // about us
+    // about us xxl
     .info-box {
         margin-left: 0;
         margin-right: auto;
     }
-    .aboutus-bg {
-        height: 800px;
-    }
+
+    // footer xxl
     .footer-links {
         flex-direction: row;
         > div {
@@ -113,7 +112,7 @@
 }
 
 @media screen and (min-width: media(xxxl)){
-        //font size classes 
+        //font size classes xxxl
         .h1 {font-size: xxxlFont(h1);}
         .h2 {font-size: xxxlFont(h2);}
         .h3 {font-size: xxxlFont(h3);}
@@ -122,7 +121,7 @@
         .smallFont {font-size: xxxlFont(small);}
         footer a {font-size: xxxlFont(small);}
 
-        // header
+        // header xxl
         header {
             height: $navTopHeight + 20px;
         }
