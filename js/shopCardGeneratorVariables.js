@@ -1,12 +1,10 @@
-
 //
 //
 // number of cards
 //
 //
 
-let numberOfCards = 50;
-
+let numberOfCards = 13;
 
 //
 //
@@ -14,61 +12,90 @@ let numberOfCards = 50;
 //
 //
 let monitorNames = [
-    "cdv-guard",
-    "cdv-43d",
-    "cdv-43dm",
-    "cdv-43win",
-    "cdv-46b",
-    "cdv-46bm",
-    "cdv-51d",
-    "cdv-51dm",
-    "cdv-70ms4",
-    "cdv-70t4",
-    "cdv-70tm4",
-    "cdv-70win",
-    "cdv-80ms4",
-  ];
-  let priceMonitors = [
-    "100000",
-    "1500000",
-    "9600000",
-    "5200000",
-    "7800000",
-    "2200000",
-    "3600000",
-    "1780000",
-    "7800000",
-    "2200000",
-    "3600000",
-    "1780000",
-  ];
+  "cdv-guard",
+  "cdv-43d",
+  "cdv-43dm",
+  "cdv-43win",
+  "cdv-46b",
+  "cdv-46bm",
+  "cdv-51d",
+  "cdv-51dm",
+  "cdv-70ms4",
+  "cdv-70t4",
+  "cdv-70tm4",
+  "cdv-70win",
+  "cdv-80ms4",
+];
+let panelNames = [
+  "drc-ntc1",
+  "drc-ntc3",
+  "drc-ntc1id",
+  "drc-ntc3id",
+  "drc-ntc5id",
+  "drc-ntc128",
+  "drc-ntc128t",
+  "drc-ntc1t",
+  "drc-ntc3t",
+  "drc-ntc5t",
+  "drc-ntc1tid",
+  "drc-ntc3tid",
+  "drc-ntc6tid",
+  "drc-ntc20tid",
+  "drc-ntc24tid",
+  "expander",
+];
+let lateralNames = ["ntcs", "tag", "video-amplifire", "trans1", "trans2"];
+let priceMonitors = [
+  "100000",
+  "1500000",
+  "9600000",
+  "5200000",
+  "7800000",
+  "2200000",
+  "3600000",
+  "1780000",
+  "7800000",
+  "2200000",
+  "3600000",
+  "1780000",
+  "1780000",
+];
 
-  //
-  //
-  // Images SRC
-  //
-  //
-  let imagesSrc = [
-    "images2/watch-01.png",
-    "images2/watch-02.png",
-    "images2/watch-03.png",
-    "images2/watch-04.png",
-  ];
+//
+//
+// Images SRC
+//
+//
+toUpper = (x) => {
+  return x.toUpperCase();
+};
+monitorNames = monitorNames.map(toUpper);
+let monitorImagesSrc = [];
+let monitorImagesSrcPush = () => {
+  let counter = 0;
+  for (let index = 1; index <= numberOfCards; index++) {
+    let src = `Images/Shop/monitors/${monitorNames[counter]}.png`;
+    monitorImagesSrc.push(src);
+    counter++;
+  }
+};
+monitorImagesSrcPush();
 
-  //
-  //
-  // variables
-  //
-  //
-  let cardCounter = 0;
-  //
-  //
-  // svg variables
-  //
-  //
+//
+// image addresses
+//
 
+//                        Images/Shop/monitors/---.png
+//                        Images/Shop/panels/---.png
+//                        Images/Shop/lateral/---.png
 
-  let btnCardSvg = `<svg
+//
+//
+// svg variables
+//
+//
+
+let btnCardSvg = `<svg
   width="19"
   height="18"
   viewBox="0 0 19 18"
@@ -92,3 +119,10 @@ let monitorNames = [
     fill="#F1F1F1"
   />
 </svg>`;
+
+//
+//
+// variables
+//
+//
+let cardCounter = 0;
