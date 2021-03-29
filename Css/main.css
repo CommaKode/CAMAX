@@ -553,6 +553,7 @@ textarea, button, input {
 
 button {
   background-color: transparent;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5 {
@@ -855,6 +856,10 @@ header a, header button {
   transition: all ease-in-out 0.3s;
 }
 
+.desktop-nav .left-nav button:hover svg path {
+  fill: #fe0000;
+}
+
 .desktop-nav .left-nav button svg {
   margin-right: 0;
 }
@@ -910,6 +915,10 @@ header a, header button {
 
 .nav-bottom > li:hover a {
   color: #fe0000;
+}
+
+.nav-bottom > li:hover a svg path {
+  fill: #fe0000;
 }
 
 .nav-bottom > li:hover .drop-down {

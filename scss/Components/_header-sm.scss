@@ -133,8 +133,13 @@ header {
         transition: $primaryTransition;
       }
     }
-    button svg {
-      margin-right: 0;
+    button {
+      &:hover svg path {
+        fill: $primaryColor;
+      }
+      svg {
+        margin-right: 0;
+      }
     }
     a:hover svg path {
       fill: $primaryColor;
@@ -175,6 +180,9 @@ header {
     &:hover {
       a {
         color: $primaryColor;
+        svg path {
+          fill: $primaryColor;
+        }
       }
       .drop-down {
         transform: scaleY(1);
