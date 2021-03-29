@@ -1,3 +1,9 @@
+@media screen and (min-width: media(md)){
+    //hero sectopn md
+    .hero {
+        min-height: 800px;
+    }
+}
 @media screen and (min-width: media(lg)){
     //font size classes 
     .h1 {font-size: lgFont(h1);}
@@ -44,6 +50,9 @@
             }
         }
     }
+    .btn {
+        line-height: 30px;
+    }
 
     //
     // about us lg
@@ -71,6 +80,9 @@
 
 }
 @media screen and (min-width: media(xxl)){
+    // container width
+    .container-width {padding: $containerPaddingD;}
+    // about us
     .info-box {
         margin-left: 0;
         margin-right: auto;
