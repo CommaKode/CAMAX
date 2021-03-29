@@ -130,10 +130,14 @@ header {
       margin-right: $partMargin;
       path {
         fill: $black;
+        transition: $primaryTransition;
       }
     }
     button svg {
       margin-right: 0;
+    }
+    a:hover svg path {
+      fill: $primaryColor;
     }
   }
   .desktop-search {
@@ -142,6 +146,11 @@ header {
       border-bottom: $borderLine;
       width: 175px;
       padding: 0 10px 5px 10px;
+
+      &:focus ~ button svg path,
+      &:hover ~ button svg path {
+        fill: $lightBlue;
+      }
     }
   }
 }

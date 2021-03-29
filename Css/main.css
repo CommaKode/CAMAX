@@ -851,10 +851,16 @@ header a, header button {
 
 .desktop-nav .left-nav svg path {
   fill: #1f1f1f;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .desktop-nav .left-nav button svg {
   margin-right: 0;
+}
+
+.desktop-nav .left-nav a:hover svg path {
+  fill: #fe0000;
 }
 
 .desktop-nav .desktop-search {
@@ -865,6 +871,11 @@ header a, header button {
   border-bottom: solid 1px #7D98A1;
   width: 175px;
   padding: 0 10px 5px 10px;
+}
+
+.desktop-nav .desktop-search input:focus ~ button svg path,
+.desktop-nav .desktop-search input:hover ~ button svg path {
+  fill: #7D98A1;
 }
 
 .nav-bottom {
