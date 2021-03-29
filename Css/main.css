@@ -686,14 +686,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .infoCard > h5 {
-  font-size: 2rem;
   color: #1f1f1f;
   margin-top: 10px;
 }
 
 .infoCard > p {
   margin-top: 10px;
-  font-size: 1.4rem;
   color: #6c6060;
   text-align: right;
 }
