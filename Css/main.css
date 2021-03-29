@@ -907,6 +907,14 @@ header a, header button {
   height: 100%;
 }
 
+.nav-bottom > li > a span {
+  margin-right: 15px;
+}
+
+.nav-bottom > li > a svg path {
+  fill: #7D98A1;
+}
+
 .nav-bottom .drop-down {
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
