@@ -28,12 +28,17 @@
   font-weight: $boldWeight;
   border-radius: $radiusPrimary;
   font-size: $btnFontSize;
+  transition: $primaryTransition;
 }
 .firstBtn {
   border-color: $hiroButtonsBorderColor;
   color: $primaryColor;
   align-items: center;
   background-color: $primaryColorLowOpacity;
+  &:hover {
+    background-color: $primaryColor;
+    color: $gray;
+  }
 }
 .secondBtn {
   color: $darkBlue;
@@ -43,6 +48,13 @@
     margin-right: 15px;
     path {
       fill: $darkBlue;
+    }
+  }
+  &:hover {
+    background-color: $darkBlue;
+    color: $gray;
+    svg path {
+      fill: $gray;
     }
   }
 }

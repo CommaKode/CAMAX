@@ -602,6 +602,8 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
   border-radius: 10px;
   font-size: 1.6rem;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .firstBtn {
@@ -611,6 +613,11 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffe5e5;
+}
+
+.firstBtn:hover {
+  background-color: #fe0000;
+  color: #f1f1f1;
 }
 
 .secondBtn {
@@ -625,6 +632,15 @@ h1, h2, h3, h4, h5 {
 
 .secondBtn svg path {
   fill: #061928;
+}
+
+.secondBtn:hover {
+  background-color: #061928;
+  color: #f1f1f1;
+}
+
+.secondBtn:hover svg path {
+  fill: #f1f1f1;
 }
 
 .shopCard {
