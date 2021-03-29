@@ -597,7 +597,7 @@ h1, h2, h3, h4, h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 20px;
+  line-height: 25px;
   border: 1px solid;
   padding: 10px 20px;
   font-weight: 600;
@@ -1330,12 +1330,8 @@ footer a {
           align-items: center;
 }
 
-.shop-section .shop .illustration {
-  width: 150px;
-}
-
 .shop-section .shop .illustration img {
-  height: 60px;
+  width: 90px;
   display: block;
 }
 
@@ -1356,8 +1352,12 @@ footer a {
   margin-bottom: 60px;
 }
 
+.shop-section .shop .cards div:last-child {
+  margin-left: 20px;
+}
+
 .about-us {
-  margin-top: 160px;
+  margin-top: 100px;
 }
 
 .about-us > div {
@@ -1376,6 +1376,7 @@ footer a {
   margin-top: 20px;
   color: #1f1f1f;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .about-us .info-cards {
@@ -1400,7 +1401,7 @@ footer a {
 }
 
 .aboutus-bg {
-  margin-top: 120px;
+  margin-top: 60px;
   position: absolute;
   width: 80%;
   height: 900px;
@@ -1514,6 +1515,12 @@ footer a {
 @media screen and (min-width: 1200px) {
   .container-width {
     padding: 0 10%;
+  }
+  .about-us {
+    margin-top: 160px;
+  }
+  .aboutus-bg {
+    margin-top: 120px;
   }
   .info-box {
     margin-left: 0;

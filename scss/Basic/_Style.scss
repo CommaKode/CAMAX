@@ -56,9 +56,8 @@
         justify-content: flex-start;
         align-items: center;
         .illustration {
-            width: 150px;
             img {
-                height: 60px;
+                width: 90px;
                 display: block;
             }
             h5 {
@@ -72,6 +71,9 @@
             justify-content: flex-start;
             margin-top: $sectionMargin;
             margin-bottom: $sectionMargin;
+            div:last-child {
+                margin-left: $partMargin;
+            }
         }
     }
 }
@@ -81,7 +83,7 @@
 //
 
 .about-us {
-    margin-top: $sectionMargin + $sectionMargin +$divMargin;
+    margin-top: $sectionMargin + $divMargin;
     > div {
         margin-top: 0;
         > h3 {
@@ -94,6 +96,7 @@
             margin-top: $partMargin;
             color: $black;
             font-weight: 400;
+            margin-bottom: $partMargin;
         }
     }
     .info-cards {
@@ -108,7 +111,7 @@
     height: auto;
 }
 .aboutus-bg {
-    margin-top: $sectionMargin + $sectionMargin;
+    margin-top: $sectionMargin;
     position: absolute;
     width: 80%;
     height: 900px;

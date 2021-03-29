@@ -82,6 +82,12 @@
 @media screen and (min-width: media(xxl)){
     // container width xxl
     .container-width {padding: $containerPaddingD;}
+    .about-us {
+        margin-top: $sectionMargin + $sectionMargin + $divMargin;
+    }
+    .aboutus-bg {
+        margin-top: $sectionMargin + $sectionMargin;
+    }
     // about us xxl
     .info-box {
         margin-left: 0;
