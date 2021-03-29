@@ -1374,7 +1374,7 @@ footer a {
 
 .about-us > div > p {
   margin-top: 20px;
-  color: #1f1f1f;
+  color: #7D98A1;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -1500,8 +1500,8 @@ footer a {
   .about-us > div {
     margin-top: 80px;
   }
-  .about-us > div > h3, .about-us > div > p {
-    color: #ffffff;
+  .about-us > div > h3 {
+    color: #f1f1f1;
   }
   .info-box {
     width: 730px;
