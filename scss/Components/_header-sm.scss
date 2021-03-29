@@ -55,8 +55,8 @@ header {
 #nav-bar {
   // nav bar off
   transform: translatey(-100%);
+  display: none;
 
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
