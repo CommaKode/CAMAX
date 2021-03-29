@@ -208,7 +208,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1400px) {
   .col-xxxl-1 {
     width: 8.33333%;
   }
@@ -452,7 +452,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1400px) {
   .offset-xxxl-1 {
     margin-left: 8.33333%;
   }
@@ -731,6 +731,7 @@ header a, header button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.6rem;
 }
 
 .nav-logo {
@@ -853,7 +854,7 @@ header a, header button {
 .nav-bottom {
   background-color: #ffffff;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 
 .nav-bottom > li {
@@ -962,6 +963,10 @@ footer {
   background-color: #061928;
   border-radius: 20px 20px 0 0;
   margin-top: 40px;
+}
+
+footer a {
+  font-size: 1.4rem;
 }
 
 .footer-links {
@@ -1222,12 +1227,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - (115px));
+  height: calc(100vh - (125px));
   min-height: 700px;
-}
-
-.hero .hero-content {
-  max-width: 540px;
 }
 
 .hero .hero-btns {
@@ -1245,6 +1246,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
+  max-width: 560px;
 }
 
 .hero .hero-btns a {
@@ -1261,6 +1263,11 @@ footer {
 
 .hero .hero-h h1 span {
   color: #fe0000;
+}
+
+.hero .hero-h p {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .shop-section {
@@ -1380,7 +1387,13 @@ footer {
   .primaryFont {
     font-size: 1.8rem;
   }
+  header a {
+    font-size: 1.8rem;
+  }
   .smallFont {
+    font-size: 1.6rem;
+  }
+  footer a {
     font-size: 1.6rem;
   }
   .dn-to-df {
@@ -1425,6 +1438,9 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .hero .hero-h p {
+    text-align: right;
   }
   .about-us .info-cards {
     -webkit-box-orient: horizontal;
@@ -1483,7 +1499,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1400px) {
   .h1 {
     font-size: 6.8rem;
   }
@@ -1496,8 +1512,23 @@ footer {
   .primaryFont {
     font-size: 2rem;
   }
+  header a {
+    font-size: 2rem;
+  }
   .smallFont {
     font-size: 1.8rem;
+  }
+  footer a {
+    font-size: 1.8rem;
+  }
+  header {
+    height: 85px;
+  }
+  .nav-bottom {
+    height: 80px;
+  }
+  .hero {
+    height: calc(100vh - (165px));
   }
 }
 /*# sourceMappingURL=main.css.map */

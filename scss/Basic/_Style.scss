@@ -9,9 +9,6 @@
     align-items: center;
     height: calc(100vh - (#{$navTopHeight + $navBottomHeight}));
     min-height: 700px;
-    .hero-content {
-        max-width: 540px;
-    }
 
     .hero-btns {
         display: flex;
@@ -19,6 +16,7 @@
         align-items: center;
         flex-direction: column;
         margin-top: $partMargin;
+        max-width: 560px;
         a {
             margin-top: $elementMargin;
         }
@@ -32,6 +30,10 @@
             span {
                 color: $primaryColor;
             }
+        }
+        p {
+            margin-top: $partMargin;
+            text-align: center;
         }
     }
 }

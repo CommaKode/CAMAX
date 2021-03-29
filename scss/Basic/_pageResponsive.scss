@@ -4,7 +4,9 @@
     .h2 {font-size: lgFont(h2);}
     .h3 {font-size: lgFont(h3);}
     .primaryFont {font-size: lgFont(primary);}
+    header a {font-size: lgFont(primary);} 
     .smallFont {font-size: lgFont(small);}
+    footer a {font-size: lgFont(small);}
 
     // changing display none to flex
     .dn-to-df {
@@ -37,6 +39,9 @@
         }
         .hero-h {
             align-items: flex-start;
+            p {
+                text-align: right;
+            }
         }
     }
 
@@ -101,5 +106,18 @@
         .h2 {font-size: xxxlFont(h2);}
         .h3 {font-size: xxxlFont(h3);}
         .primaryFont {font-size: xxxlFont(primary);}
+        header a {font-size: xxxlFont(primary);} 
         .smallFont {font-size: xxxlFont(small);}
+        footer a {font-size: xxxlFont(small);}
+
+        // header
+        header {
+            height: $navTopHeight + 20px;
+        }
+        .nav-bottom {
+            height: $navBottomHeight + 20px;
+        }
+        .hero {
+            height: calc(100vh - (#{$navTopHeight + $navBottomHeight + 40px}));
+        }
 }

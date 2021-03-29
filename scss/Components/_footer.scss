@@ -2,6 +2,9 @@ footer {
     background-color: $sectionColor;
     border-radius: $footerRadius;
     margin-top: $divMargin;
+    a {
+        font-size: $smallFontSize;
+    }
 }
 .footer-links {
     margin: 10px 0;
