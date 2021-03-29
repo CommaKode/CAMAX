@@ -15,6 +15,13 @@ footer {
     >div {
         padding: $menuBtnPadding;
         border-bottom: $borderLine;
+        ul li a {
+            margin-top: 5px;
+            color: $lightBlue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
     button, a {
         color: $gray;
@@ -38,7 +45,8 @@ footer {
     .address {
         height: 200px;
         padding: $addressPadding;
-        align-items: flex-end;
+        align-items: flex-start;
+        margin-left: 7%;
         margin-right: $partMargin;
         span {
             line-height: 25px;

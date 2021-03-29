@@ -1024,6 +1024,15 @@ footer a {
   border-bottom: solid 1px #7D98A1;
 }
 
+.footer-links > div ul li a {
+  margin-top: 5px;
+  color: #7D98A1;
+}
+
+.footer-links > div ul li a:hover {
+  text-decoration: underline;
+}
+
 .footer-links button, .footer-links a {
   color: #f1f1f1;
 }
@@ -1053,9 +1062,10 @@ footer a {
 .footer-address .address {
   height: 200px;
   padding: 25px 0;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 7%;
   margin-right: 20px;
 }
 
@@ -1548,6 +1558,9 @@ footer a {
   }
   .dn {
     display: block;
+  }
+  .footer-address .address {
+    margin-left: 10%;
   }
 }
 
