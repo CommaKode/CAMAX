@@ -1318,7 +1318,6 @@ footer {
 }
 
 .about-us .info-cards {
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1343,7 +1342,7 @@ footer {
   margin-top: 60px;
   position: absolute;
   width: 80%;
-  height: 850px;
+  height: 900px;
   background-color: #061928;
   z-index: -1;
   display: none;
@@ -1426,7 +1425,6 @@ footer {
   }
   .info-box {
     width: 730px;
-    height: 730px;
     margin: 0 auto;
   }
   .aboutus-bg {
@@ -1440,7 +1438,7 @@ footer {
     margin-right: auto;
   }
   .aboutus-bg {
-    height: 750px;
+    height: 800px;
   }
 }
 

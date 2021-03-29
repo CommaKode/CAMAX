@@ -95,7 +95,6 @@
         }
     }
     .info-cards {
-        margin-top: $partMargin;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -110,7 +109,7 @@
     margin-top: $sectionMargin;
     position: absolute;
     width: 80%;
-    height: 850px;
+    height: 900px;
     background-color: $sectionColor;
     z-index: -1;
     display: none;
