@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="/Css/main.css" />
+    
     </head>
     <body>
       <header>
@@ -687,7 +688,7 @@
           </div>
         </aside>
         <div
-          class="productGrid offset-xxl-1 offset-xl-1 offset-lg-1 offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-8 col-xl-6 col-lg-6 col-md-6 col-sm-7"
+         id="productGrid" class="productGrid offset-xxl-1 offset-xl-1 offset-lg-1 offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-8 col-xl-6 col-lg-6 col-md-6 col-sm-7"
         >
           <div class="shopCard">
             <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
@@ -950,6 +951,7 @@
           </div>
         </div>
       </div>
+      <!-- <button onclick="shopCardCreator">create</button> -->
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <script>
         //  let filtersHeight=$('.filterItems').css('height');
@@ -963,15 +965,44 @@
             $("#filterItems2").slideToggle(duration);
           });
           $("#accordion-3").click(function () {
-            $("#content3").slideToggle(duration);
+            $("#filterItems3").slideToggle(duration);
           });
           $("#accordion-4").click(function () {
-            $("#content4").slideToggle(duration);
+            $("#filterItems4").slideToggle(duration);
           });
           $("#accordion-5").click(function () {
-            $("#content5").slideToggle(duration);
+            $("#filterItems5").slideToggle(duration);
+          });
+          $("#accordion-6").click(function () {
+            $("#filterItems6").slideToggle(duration);
+          });
+          $("#accordion-7").click(function () {
+            $("#filterItems7").slideToggle(duration);
+          });
+          $("#accordion-8").click(function () {
+            $("#filterItems8").slideToggle(duration);
+          });
+          $("#accordion-9").click(function () {
+            $("#filterItems9").slideToggle(duration);
+          });
+          $("#accordion-10").click(function () {
+            $("#filterItems10").slideToggle(duration);
+          });
+          $("#accordion-11").click(function () {
+            $("#filterItems11").slideToggle(duration);
+          });
+          $("#accordion-12").click(function () {
+            $("#filterItems12").slideToggle(duration);
+          });
+          $("#accordion-13").click(function () {
+            $("#filterItems13").slideToggle(duration);
           });
         });
+         shopCardCreator=() =>{
+          let productGrid = document.getElementById("productGrid");
+          let NewShopCard = document.productGrid.createElement("div.shopCard");
+          let newImg=document.body.appendChild(img);
+        }
       </script>
     </body>
   </html>

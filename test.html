@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/main.css" />
+    <title>Document</title>
+    <style>
+      button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+      }
+      button:focus {
+        background-color: greenyellow;
+      }
+      .productGrid {
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        height: 200vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="productGrid" id="productGrid"></div>
+    <!-- <button onclick="shopCardCreator2()">create</button> -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      let monitorNames = [
+        "cdv-guard",
+        "cdv-43d",
+        "cdv-43dm",
+        "cdv-43win",
+        "cdv-46b",
+        "cdv-46bm",
+        "cdv-51d",
+        "cdv-51dm",
+        "cdv-70ms4",
+        "cdv-70t4",
+        "cdv-70tm4",
+        "cdv-70win",
+        "cdv-80ms4",
+      ];
+      let numberOfCards = 13;
+      var shopCardCreator = function () {
+        for (let index = 1; index <= numberOfCards; index++) {
+          // creating new div
+          var newDiv = document.createElement("div");
+          document.getElementById("productGrid").appendChild(newDiv);
+          // adding shopCard class to div
+          newDiv.classList.add(".shopCard");
+          // defining id into our div
+          newDiv.setAttribute("id", `card${index}`);
+          // create image element
+          let addImage = document.createElement("img");
+          document.getElementById(`card${index}`).appendChild(addImage);
+          // defining id into images
+          addImage.setAttribute("id", `image${index}`);
+        }
+      };
+      let cardCounter = 0;
+
+      var addSrc = function () {
+        let imagesSrc = [
+          "images2/watch-01.png",
+          "images2/watch-02.png",
+          "images2/watch-03.png",
+          "images2/watch-04.png",
+        ];
+        for (let index = 0; index < imagesSrc.length; index++) {
+          // adding src for image
+          cardCounter++;
+          document
+            .getElementById(`image${cardCounter}`)
+            .setAttribute("src", imagesSrc[index]);
+          // adding class for image
+          document
+            .getElementById(`image${cardCounter}`)
+            .classList.add("cardImg");
+        }
+      };
+      addPnameSpan = () => {
+        for (let index = 1; index <= numberOfCards; index++) {
+          //    const element = array[index];
+          let productNameSpan = document.createElement("span");
+          // cardCounter++
+          document.getElementById(`card${index}`).appendChild(productNameSpan);
+          productNameSpan.setAttribute("id", `productName${index}`);
+          document
+            .getElementById(`productName${index}`)
+            .classList.add("product-name");
+          document.getElementById(
+            `productName${index}`
+          ).innerHTML = monitorNames[index];
+        }
+      };
+      addPriceDiv = () => {
+        for (let index = 1; index <= numberOfCards; index++) {
+          // const element = array[index];
+          let priceTag = document.createElement("div");
+          document.getElementById(`card${index}`).appendChild(priceTag);
+        }
+      };
+      shopCardCreator();
+      addSrc();
+      addPnameSpan();
+      addPriceDiv();
+    </script>
+  </body>
+</html>

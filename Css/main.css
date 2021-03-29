@@ -1609,6 +1609,12 @@ footer {
   color: #1f1f1f;
 }
 
+.cardImg {
+  height: 140px;
+  width: 165px;
+  margin-top: 25px;
+}
+
 @media screen and (min-width: 768px) {
   .dn-to-df {
     display: -webkit-box;
