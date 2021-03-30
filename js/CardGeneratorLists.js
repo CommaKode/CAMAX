@@ -39,19 +39,19 @@
 // ];
 
 let monitorNames = [
-    { productName: "cdv-guard", productPrice: "1200000000", productSrc: "" },
-    { productName: "cdv-43d", productPrice: "561615", productSrc: "" },
-    { productName: "cdv-43dm", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-43win", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-46b", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-46bm", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-51d", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-51dm", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-70ms4", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-70t4", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-70tm4", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-70win", productPrice: "1200000", productSrc: "" },
-    { productName: "cdv-80ms4", productPrice: "1200000", productSrc: "" },
+    { productName: "cdv-guard", productPrice: "1200000000", productSrc: "" ,inConnector="on" , sd="on"},
+    { productName: "cdv-43d", productPrice: "561615", productSrc: "" ,inConnector="on" , sd="on"},
+    { productName: "cdv-43dm", productPrice: "1200000", productSrc: "" ,inConnector="off" , sd="on"},
+    { productName: "cdv-43win", productPrice: "1200000", productSrc: "" ,inConnector="on" , sd="off"},
+    { productName: "cdv-46b", productPrice: "1200000", productSrc: "",inConnector="on" , sd="on"},
+    { productName: "cdv-46bm", productPrice: "1200000", productSrc: "" ,inConnector="off" , sd="on"},
+    { productName: "cdv-51d", productPrice: "1200000", productSrc: "",inConnector="on" , sd="on" },
+    { productName: "cdv-51dm", productPrice: "1200000", productSrc: "" ,inConnector="on" , sd="off"},
+    { productName: "cdv-70ms4", productPrice: "1200000", productSrc: "" ,inConnector="off" , sd="on"},
+    { productName: "cdv-70t4", productPrice: "1200000", productSrc: "" ,inConnector="on" , sd="on"},
+    { productName: "cdv-70tm4", productPrice: "1200000", productSrc: "",inConnector="off" , sd="off" },
+    { productName: "cdv-70win", productPrice: "1200000", productSrc: "" ,inConnector="on" , sd="on"},
+    { productName: "cdv-80ms4", productPrice: "1200000", productSrc: "" ,inConnector="on" , sd="on"},
   ];
   let panelNames = [
     { productName: "drc-ntc1", productPrice: "1200000", productSrc: "" },

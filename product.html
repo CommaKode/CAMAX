@@ -400,7 +400,7 @@
           </ul>
           <div class="filterItems" id="filterItems4">
             <span>
-              <input type="checkbox" id="inConnectorOn" />
+              <input type="checkbox" id="inConnectorOn"  />
               <label for="inConnectorOn">دارد </label>
             </span>
             <span>
@@ -740,6 +740,18 @@
             $("#filterItems13").slideToggle(duration);
           });
         });
+       let inConnectorOn = document.getElementById("inConnectorOn");
+       console.log(inConnectorOn.checked)
+       
+
+      
+      //  test=()=>{
+      //    if(inConnectorOn.checked){
+      //     alert(" conctor is on")
+      //    }
+      //  }
+
+         
          shopCardCreator=() =>{
           let productGrid = document.getElementById("productGrid");
           let NewShopCard = document.productGrid.createElement("div.shopCard");

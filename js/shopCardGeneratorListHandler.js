@@ -5,8 +5,8 @@
 // number of cards
 //
 //
-let myKey ="panel";
-let numberOfCards = panelNames.length;
+let myKey ="monitor";
+let numberOfCards = monitorNames.length;
 //
 //
 // Images SRC

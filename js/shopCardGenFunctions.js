@@ -18,7 +18,6 @@ function shopCardCreator() {
 
   }
 }
-
 var addSrc = function () {
   let counter = 0;
   for (let index = 1; index <= numberOfCards; index++) {
