@@ -3,10 +3,10 @@
 // Part Functions
 //
 //
-toUpper = (x) => {
-  return x.toUpperCase();
-};
-var shopCardCreator = function () {
+// toUpper = (x) => {
+//   return x.toUpperCase();
+// };
+function shopCardCreator() {
   for (let index = 1; index <= numberOfCards; index++) {
     // creating new div
     var newDiv = document.createElement("div");
@@ -15,9 +15,9 @@ var shopCardCreator = function () {
     newDiv.classList.add("shopCard");
     // defining id into our div
     newDiv.setAttribute("id", `card${index}`);
-   
+
   }
-};
+}
 
 var addSrc = function () {
   let counter = 0;
@@ -31,6 +31,7 @@ var addSrc = function () {
     document
       .getElementById(`image${index}`)
       .setAttribute("src", monitorImagesSrc[counter]);
+
     // adding class for image
     document.getElementById(`image${index}`).classList.add("cardImg");
     counter++;
@@ -60,16 +61,13 @@ addPnameSpan = () => {
     document
       .getElementById(`productName${index}`)
       .classList.add("product-name");
-    //
-    // to upperCase the monitor names
-    //
-    monitorNames = monitorNames.map(toUpper);
+  
     //
     // inner names
     //
 
     document.getElementById(`productName${index}`).innerHTML =
-      monitorNames[counter];
+      pNameList[counter].toUpperCase();
     counter++;
   }
 };
@@ -107,7 +105,7 @@ addPriceDiv = () => {
     //inner product price
     //
     document.getElementById(`productPrice${index}`).innerHTML =
-      priceMonitors[counter];
+    pPriceList[counter];
       counter++
     /////////////////////
     //
