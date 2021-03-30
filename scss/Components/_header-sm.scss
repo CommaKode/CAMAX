@@ -1,0 +1,217 @@
+header {
+  width: 100%;
+  height: 65px;
+  background-color: $white;
+  position: relative;
+  .nav-top {
+    @include box(100%);
+  }
+  
+  //
+  // mobile nav bar
+  //
+
+  .mobile-nav {
+    @include box(100%);
+    align-items: center;
+    // position: absolute;
+    > a, > button {
+      z-index: 1000;
+    }
+  }
+  a, button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//mobile nav bar when toggle is off
+
+}
+.nav-logo {
+  width: 130px;
+  > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// svg colors before toggle is on that shoud change afterwards
+
+#logo-text {
+  fill: $black;
+}
+#nav-cart {
+  fill: $black;
+}
+#ham-menu > svg line {
+  stroke: $black;
+}
+
+// mobile nav bar when the toggle is on
+
+#nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $black;
+  // nav bar off
+  transform: translatey(-100%);
+  transition: $primaryTransition;
+  z-index: 100;
+}
+
+// mobile search
+
+.nav-container {
+  margin-top: 85px;
+}
+#searching {
+  height: 35px;
+  border-radius: 50px;
+  padding: 0 25px 0 60px;
+}
+.search-container {
+  position: relative;
+  #search-btn {
+    position: absolute;
+    left: 5%;
+    top: 5px;
+    height: 25px;
+    > svg {
+      height: 100%;
+    }
+  }
+}
+
+// ham menu nav links
+
+.nav-links-container {
+  margin-top: $partMargin;
+  a {
+    color: $gray;
+    border-bottom: $borderLine;
+    padding: 10px 0;
+  }
+}
+.nav-login {
+  margin-top: $divMargin;
+  button {
+    color: $gray;
+    border: solid 1px $gray;
+    border-radius: 50px;
+    height: 45px;
+    font-size: $mainFontSize;
+  }
+  a {
+    color: $gray;
+    margin-top: $elementMargin;
+    font-size: $smallFontSize;
+  }
+}
+
+//
+// desktop
+//
+
+// forcing desktop navbar display to be display:block
+// and coding top desktop navbar
+.desktop-nav {
+  @include box(100%);
+  .left-nav {
+    svg {
+      height: 25px;
+      margin-right: $partMargin;
+      path {
+        fill: $black;
+      }
+    }
+    button svg {
+      margin-right: 0;
+    }
+  }
+  .desktop-search {
+    position: relative;
+    input {
+      border-bottom: $borderLine;
+      width: 175px;
+      padding: 0 10px 5px 10px;
+    }
+  }
+}
+
+// desktop nav bottom
+
+.nav-bottom {
+  background-color: $white;
+  @include box(100%, 50px);
+  > li {
+    height: 100%;
+    position: relative;
+    min-width: fit-content;
+    &::before {
+      @include psoudo();
+      @include box(100%, 2px);
+      background-color: $primaryColor;
+      transition: $primaryTransition;
+      transform-origin: right;
+      transform: scaleX(0);
+    }
+    &:hover {
+      a {
+        color: $primaryColor;
+      }
+      .drop-down {
+        transform: scaleY(1);
+        &::before {
+          transform: scaleX(1);
+        }
+      }
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+    > a {
+      height: 100%;
+      padding: 0 30px;
+      color: $black;
+      font-weight: 400;
+      height: 100%;
+    }
+  }
+
+  // drop down menu
+  .drop-down {
+    @include card($dropDownRadius);
+    transform: scaleY(0);
+    position: absolute;
+    right: 0;
+    min-width: 100%;
+    transition: $primaryTransition;
+    transform-origin: top;
+    // transition-delay: .2s;
+    li {
+      a {
+        padding: 10px 20px;
+        color: $black;
+        white-space: nowrap;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+    &::before {
+      @include psoudo();
+      transition: $primaryTransition;
+      transform-origin: right;
+      width: 100%;
+      top: -2px;
+      height: 2px;
+      background-color: $primaryColor;
+      transform: scaleX(0);
+    }
+  }
+}

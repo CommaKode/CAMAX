@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="/Css/main.css" />
+    
     </head>
     <body>
       <header>
@@ -259,8 +260,7 @@
         <aside
           class="filter offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-2 col-xl-3 col-lg-4 col-md-6 offright-sm-1 col-sm-4"
         >
-       
-          <ul>
+          <ul id="accordion-1">
             <span>
               <p>فیلتر قیمت</p>
 
@@ -280,7 +280,7 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
+            <!-- <div class="filterItems">
               <span>
                 <input type="checkbox" id="4.3inch" />
                 <label for="4.3inch">4.3 اینچ </label>
@@ -301,9 +301,9 @@
                 <input type="checkbox" id="8inch" />
                 <label for="8inch">8 اینچ</label>
               </span>
-            </div>
+            </div> -->
           </ul>
-          <ul>
+          <ul id="accordion-2">
             <span>
               <p>سایز صفحه ی نمایش</p>
 
@@ -323,30 +323,30 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="4.3inch" />
-                <label for="4.3inch">4.3 اینچ </label>
-              </span>
-              <span>
-                <input type="checkbox" id="4.6inch" />
-                <label for="4.6inch">4.6 اینچ</label>
-              </span>
-              <span>
-                <input type="checkbox" id="5.1inch" />
-                <label for="5.1inch">5.1 اینچ</label>
-              </span>
-              <span>
-                <input type="checkbox" id="7inch" />
-                <label for="7inch">7 اینچ</label>
-              </span>
-              <span>
-                <input type="checkbox" id="8inch" />
-                <label for="8inch">8 اینچ</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems2">
+            <span>
+              <input type="checkbox" id="4.3inch" />
+              <label for="4.3inch">4.3 اینچ </label>
+            </span>
+            <span>
+              <input type="checkbox" id="4.6inch" />
+              <label for="4.6inch">4.6 اینچ</label>
+            </span>
+            <span>
+              <input type="checkbox" id="5.1inch" />
+              <label for="5.1inch">5.1 اینچ</label>
+            </span>
+            <span>
+              <input type="checkbox" id="7inch" />
+              <label for="7inch">7 اینچ</label>
+            </span>
+            <span>
+              <input type="checkbox" id="8inch" />
+              <label for="8inch">8 اینچ</label>
+            </span>
+          </div>
+          <ul id="accordion-3">
             <span>
               <p>حافظه</p>
 
@@ -366,21 +366,20 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="sdOn" />
-                <label for="sdOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="sdOff" />
-                <label for="sdOff">ندارد</label>
-              </span>
-        
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems3">
             <span>
-          <p>ازتباط داخلی</p>
+              <input type="checkbox" id="sdOn" />
+              <label for="sdOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="sdOff" />
+              <label for="sdOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-4">
+            <span>
+              <p>ازتباط داخلی</p>
 
               <svg
                 width="35"
@@ -398,18 +397,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="inConnectorOn" />
-                <label for="inConnectorOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="inConnectorOff" />
-                <label for="inConnectorOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems4">
+            <span>
+              <input type="checkbox" id="inConnectorOn"  />
+              <label for="inConnectorOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="inConnectorOff" />
+              <label for="inConnectorOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-5">
             <span>
               <p>گوشی</p>
               <svg
@@ -428,18 +427,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="phoneOn" />
-                <label for="phoneOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="phoneOff" />
-                <label for="phoneOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems5">
+            <span>
+              <input type="checkbox" id="phoneOn" />
+              <label for="phoneOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="phoneOff" />
+              <label for="phoneOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-6">
             <span>
               <p>باز کن درب پارکینگ</p>
 
@@ -459,18 +458,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="openerOn" />
-                <label for="openerOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="openerOff" />
-                <label for="openerOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems6">
+            <span>
+              <input type="checkbox" id="openerOn" />
+              <label for="openerOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="openerOff" />
+              <label for="openerOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-7">
             <span>
               <p>نوع صفحه ی نمایش</p>
 
@@ -490,18 +489,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="touchOn" />
-                <label for="touchOn">لمسی </label>
-              </span>
-              <span>
-                <input type="checkbox" id="touchOff" />
-                <label for="touchOff">غیرلمسی</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems7">
+            <span>
+              <input type="checkbox" id="touchOn" />
+              <label for="touchOn">لمسی </label>
+            </span>
+            <span>
+              <input type="checkbox" id="touchOff" />
+              <label for="touchOff">غیرلمسی</label>
+            </span>
+          </div>
+          <ul id="accordion-8">
             <span>
               <p>کارتخوان</p>
 
@@ -521,18 +520,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="cartOn" />
-                <label for="cartOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="cartOff" />
-                <label for="cartOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems8">
+            <span>
+              <input type="checkbox" id="cartOn" />
+              <label for="cartOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="cartOff" />
+              <label for="cartOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-9">
             <span>
               <p>اتصال تلفن به مونیتور</p>
 
@@ -552,18 +551,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="telephoneOn" />
-                <label for="telephoneOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="telephoneOff" />
-                <label for="telephoneOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems9">
+            <span>
+              <input type="checkbox" id="telephoneOn" />
+              <label for="telephoneOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="telephoneOff" />
+              <label for="telephoneOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-10">
             <span>
               <p>اتصال به دوربین دیگر</p>
 
@@ -583,18 +582,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="cameraOn" />
-                <label for="cameraOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="cameraOff" />
-                <label for="cameraOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems10">
+            <span>
+              <input type="checkbox" id="cameraOn" />
+              <label for="cameraOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="cameraOff" />
+              <label for="cameraOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-11">
             <span>
               <p>اتصال به دو پنل بیرونی</p>
 
@@ -614,18 +613,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="twoPanelOn" />
-                <label for="twoPanelOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="twoPanelOff" />
-                <label for="twoPanelOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems11">
+            <span>
+              <input type="checkbox" id="twoPanelOn" />
+              <label for="twoPanelOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="twoPanelOff" />
+              <label for="twoPanelOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-12">
             <span>
               <p>اتصال به گارد نگهبانی</p>
 
@@ -645,18 +644,18 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="guardOn" />
-                <label for="guardOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="guardOff" />
-                <label for="guardOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-          <ul>
+          <div class="filterItems" id="filterItems12">
+            <span>
+              <input type="checkbox" id="guardOn" />
+              <label for="guardOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="guardOff" />
+              <label for="guardOff">ندارد</label>
+            </span>
+          </div>
+          <ul id="accordion-13">
             <span>
               <p>قفل اضافه</p>
 
@@ -676,284 +675,88 @@
                 />
               </svg>
             </span>
-            <div class="filterItems">
-              <span>
-                <input type="checkbox" id="lockOn" />
-                <label for="lockOn">دارد </label>
-              </span>
-              <span>
-                <input type="checkbox" id="lockOff" />
-                <label for="lockOff">ندارد</label>
-              </span>
-            </div>
           </ul>
-         
+          <div class="filterItems" id="filterItems13">
+            <span>
+              <input type="checkbox" id="lockOn" />
+              <label for="lockOn">دارد </label>
+            </span>
+            <span>
+              <input type="checkbox" id="lockOff" />
+              <label for="lockOff">ندارد</label>
+            </span>
+          </div>
         </aside>
         <div
-          class="productGrid offset-xxl-1 offset-xl-1 offset-lg-1 offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-8 col-xl-6 col-lg-6 col-md-6 col-sm-7"
+         id="productGrid" class="productGrid offset-xxl-1 offset-xl-1 offset-lg-1 offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-8 col-xl-6 col-lg-6 col-md-6 col-sm-7"
         >
-          <div class="shopCard">
-            <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
-            <span class="product-name">cv-jhs3</span>
-            <div>
-              <span class="product-price">10000</span>
-              <span class="toman">تومان</span>
-            </div>
-            <a href="" class="shopBtn"
-              >خرید
-              <span>
-                <svg
-                  width="19"
-                  height="18"
-                  viewBox="0 0 19 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42878 18C7.13886 18 7.71449 17.4244 7.71449 16.7143C7.71449 16.0042 7.13886 15.4286 6.42878 15.4286C5.7187 15.4286 5.14307 16.0042 5.14307 16.7143C5.14307 17.4244 5.7187 18 6.42878 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M15.4288 18C16.1389 18 16.7145 17.4244 16.7145 16.7143C16.7145 16.0042 16.1389 15.4286 15.4288 15.4286C14.7187 15.4286 14.1431 16.0042 14.1431 16.7143C14.1431 17.4244 14.7187 18 15.4288 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M3.20143 0.516857C3.17231 0.371179 3.09364 0.240082 2.97878 0.145856C2.86393 0.0516293 2.71999 8.97198e-05 2.57143 0H0V1.28571H2.04429L4.51286 13.626C4.54197 13.7717 4.62065 13.9028 4.7355 13.997C4.85035 14.0912 4.9943 14.1428 5.14286 14.1429H16.7143V12.8571H5.67L5.15571 10.2857H16.7143C16.8605 10.2857 17.0024 10.2358 17.1165 10.1443C17.2305 10.0528 17.31 9.92511 17.3417 9.78236L18.7997 3.21429H17.4838L16.1987 9H4.89857L3.20143 0.516857Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M11.5715 2.57143V0H10.2858V2.57143H7.71436V3.85714H10.2858V6.42857H11.5715V3.85714H14.1429V2.57143H11.5715Z"
-                    fill="#F1F1F1"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="shopCard">
-            <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
-            <span class="product-name">cv-jhs3</span>
-            <div>
-              <span class="product-price">10000</span>
-              <span class="toman">تومان</span>
-            </div>
-            <a href="" class="shopBtn"
-              >خرید
-              <span>
-                <svg
-                  width="19"
-                  height="18"
-                  viewBox="0 0 19 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42878 18C7.13886 18 7.71449 17.4244 7.71449 16.7143C7.71449 16.0042 7.13886 15.4286 6.42878 15.4286C5.7187 15.4286 5.14307 16.0042 5.14307 16.7143C5.14307 17.4244 5.7187 18 6.42878 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M15.4288 18C16.1389 18 16.7145 17.4244 16.7145 16.7143C16.7145 16.0042 16.1389 15.4286 15.4288 15.4286C14.7187 15.4286 14.1431 16.0042 14.1431 16.7143C14.1431 17.4244 14.7187 18 15.4288 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M3.20143 0.516857C3.17231 0.371179 3.09364 0.240082 2.97878 0.145856C2.86393 0.0516293 2.71999 8.97198e-05 2.57143 0H0V1.28571H2.04429L4.51286 13.626C4.54197 13.7717 4.62065 13.9028 4.7355 13.997C4.85035 14.0912 4.9943 14.1428 5.14286 14.1429H16.7143V12.8571H5.67L5.15571 10.2857H16.7143C16.8605 10.2857 17.0024 10.2358 17.1165 10.1443C17.2305 10.0528 17.31 9.92511 17.3417 9.78236L18.7997 3.21429H17.4838L16.1987 9H4.89857L3.20143 0.516857Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M11.5715 2.57143V0H10.2858V2.57143H7.71436V3.85714H10.2858V6.42857H11.5715V3.85714H14.1429V2.57143H11.5715Z"
-                    fill="#F1F1F1"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="shopCard">
-            <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
-            <span class="product-name">cv-jhs3</span>
-            <div>
-              <span class="product-price">10000</span>
-              <span class="toman">تومان</span>
-            </div>
-            <a href="" class="shopBtn"
-              >خرید
-              <span>
-                <svg
-                  width="19"
-                  height="18"
-                  viewBox="0 0 19 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42878 18C7.13886 18 7.71449 17.4244 7.71449 16.7143C7.71449 16.0042 7.13886 15.4286 6.42878 15.4286C5.7187 15.4286 5.14307 16.0042 5.14307 16.7143C5.14307 17.4244 5.7187 18 6.42878 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M15.4288 18C16.1389 18 16.7145 17.4244 16.7145 16.7143C16.7145 16.0042 16.1389 15.4286 15.4288 15.4286C14.7187 15.4286 14.1431 16.0042 14.1431 16.7143C14.1431 17.4244 14.7187 18 15.4288 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M3.20143 0.516857C3.17231 0.371179 3.09364 0.240082 2.97878 0.145856C2.86393 0.0516293 2.71999 8.97198e-05 2.57143 0H0V1.28571H2.04429L4.51286 13.626C4.54197 13.7717 4.62065 13.9028 4.7355 13.997C4.85035 14.0912 4.9943 14.1428 5.14286 14.1429H16.7143V12.8571H5.67L5.15571 10.2857H16.7143C16.8605 10.2857 17.0024 10.2358 17.1165 10.1443C17.2305 10.0528 17.31 9.92511 17.3417 9.78236L18.7997 3.21429H17.4838L16.1987 9H4.89857L3.20143 0.516857Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M11.5715 2.57143V0H10.2858V2.57143H7.71436V3.85714H10.2858V6.42857H11.5715V3.85714H14.1429V2.57143H11.5715Z"
-                    fill="#F1F1F1"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="shopCard">
-            <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
-            <span class="product-name">cv-jhs3</span>
-            <div>
-              <span class="product-price">10000</span>
-              <span class="toman">تومان</span>
-            </div>
-            <a href="" class="shopBtn"
-              >خرید
-              <span>
-                <svg
-                  width="19"
-                  height="18"
-                  viewBox="0 0 19 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42878 18C7.13886 18 7.71449 17.4244 7.71449 16.7143C7.71449 16.0042 7.13886 15.4286 6.42878 15.4286C5.7187 15.4286 5.14307 16.0042 5.14307 16.7143C5.14307 17.4244 5.7187 18 6.42878 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M15.4288 18C16.1389 18 16.7145 17.4244 16.7145 16.7143C16.7145 16.0042 16.1389 15.4286 15.4288 15.4286C14.7187 15.4286 14.1431 16.0042 14.1431 16.7143C14.1431 17.4244 14.7187 18 15.4288 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M3.20143 0.516857C3.17231 0.371179 3.09364 0.240082 2.97878 0.145856C2.86393 0.0516293 2.71999 8.97198e-05 2.57143 0H0V1.28571H2.04429L4.51286 13.626C4.54197 13.7717 4.62065 13.9028 4.7355 13.997C4.85035 14.0912 4.9943 14.1428 5.14286 14.1429H16.7143V12.8571H5.67L5.15571 10.2857H16.7143C16.8605 10.2857 17.0024 10.2358 17.1165 10.1443C17.2305 10.0528 17.31 9.92511 17.3417 9.78236L18.7997 3.21429H17.4838L16.1987 9H4.89857L3.20143 0.516857Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M11.5715 2.57143V0H10.2858V2.57143H7.71436V3.85714H10.2858V6.42857H11.5715V3.85714H14.1429V2.57143H11.5715Z"
-                    fill="#F1F1F1"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="shopCard">
-            <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
-            <span class="product-name">cv-jhs3</span>
-            <div>
-              <span class="product-price">10000</span>
-              <span class="toman">تومان</span>
-            </div>
-            <a href="" class="shopBtn"
-              >خرید
-              <span>
-                <svg
-                  width="19"
-                  height="18"
-                  viewBox="0 0 19 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42878 18C7.13886 18 7.71449 17.4244 7.71449 16.7143C7.71449 16.0042 7.13886 15.4286 6.42878 15.4286C5.7187 15.4286 5.14307 16.0042 5.14307 16.7143C5.14307 17.4244 5.7187 18 6.42878 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M15.4288 18C16.1389 18 16.7145 17.4244 16.7145 16.7143C16.7145 16.0042 16.1389 15.4286 15.4288 15.4286C14.7187 15.4286 14.1431 16.0042 14.1431 16.7143C14.1431 17.4244 14.7187 18 15.4288 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M3.20143 0.516857C3.17231 0.371179 3.09364 0.240082 2.97878 0.145856C2.86393 0.0516293 2.71999 8.97198e-05 2.57143 0H0V1.28571H2.04429L4.51286 13.626C4.54197 13.7717 4.62065 13.9028 4.7355 13.997C4.85035 14.0912 4.9943 14.1428 5.14286 14.1429H16.7143V12.8571H5.67L5.15571 10.2857H16.7143C16.8605 10.2857 17.0024 10.2358 17.1165 10.1443C17.2305 10.0528 17.31 9.92511 17.3417 9.78236L18.7997 3.21429H17.4838L16.1987 9H4.89857L3.20143 0.516857Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M11.5715 2.57143V0H10.2858V2.57143H7.71436V3.85714H10.2858V6.42857H11.5715V3.85714H14.1429V2.57143H11.5715Z"
-                    fill="#F1F1F1"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="shopCard">
-            <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
-            <span class="product-name">cv-jhs3</span>
-            <div>
-              <span class="product-price">10000</span>
-              <span class="toman">تومان</span>
-            </div>
-            <a href="" class="shopBtn"
-              >خرید
-              <span>
-                <svg
-                  width="19"
-                  height="18"
-                  viewBox="0 0 19 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42878 18C7.13886 18 7.71449 17.4244 7.71449 16.7143C7.71449 16.0042 7.13886 15.4286 6.42878 15.4286C5.7187 15.4286 5.14307 16.0042 5.14307 16.7143C5.14307 17.4244 5.7187 18 6.42878 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M15.4288 18C16.1389 18 16.7145 17.4244 16.7145 16.7143C16.7145 16.0042 16.1389 15.4286 15.4288 15.4286C14.7187 15.4286 14.1431 16.0042 14.1431 16.7143C14.1431 17.4244 14.7187 18 15.4288 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M3.20143 0.516857C3.17231 0.371179 3.09364 0.240082 2.97878 0.145856C2.86393 0.0516293 2.71999 8.97198e-05 2.57143 0H0V1.28571H2.04429L4.51286 13.626C4.54197 13.7717 4.62065 13.9028 4.7355 13.997C4.85035 14.0912 4.9943 14.1428 5.14286 14.1429H16.7143V12.8571H5.67L5.15571 10.2857H16.7143C16.8605 10.2857 17.0024 10.2358 17.1165 10.1443C17.2305 10.0528 17.31 9.92511 17.3417 9.78236L18.7997 3.21429H17.4838L16.1987 9H4.89857L3.20143 0.516857Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M11.5715 2.57143V0H10.2858V2.57143H7.71436V3.85714H10.2858V6.42857H11.5715V3.85714H14.1429V2.57143H11.5715Z"
-                    fill="#F1F1F1"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="shopCard">
-            <img src="Images/Shop/panelPic.png" alt="ایفوت تصویری کامک" />
-            <span class="product-name">cv-jhs3</span>
-            <div>
-              <span class="product-price">10000</span>
-              <span class="toman">تومان</span>
-            </div>
-            <a href="" class="shopBtn"
-              >خرید
-              <span>
-                <svg
-                  width="19"
-                  height="18"
-                  viewBox="0 0 19 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42878 18C7.13886 18 7.71449 17.4244 7.71449 16.7143C7.71449 16.0042 7.13886 15.4286 6.42878 15.4286C5.7187 15.4286 5.14307 16.0042 5.14307 16.7143C5.14307 17.4244 5.7187 18 6.42878 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M15.4288 18C16.1389 18 16.7145 17.4244 16.7145 16.7143C16.7145 16.0042 16.1389 15.4286 15.4288 15.4286C14.7187 15.4286 14.1431 16.0042 14.1431 16.7143C14.1431 17.4244 14.7187 18 15.4288 18Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M3.20143 0.516857C3.17231 0.371179 3.09364 0.240082 2.97878 0.145856C2.86393 0.0516293 2.71999 8.97198e-05 2.57143 0H0V1.28571H2.04429L4.51286 13.626C4.54197 13.7717 4.62065 13.9028 4.7355 13.997C4.85035 14.0912 4.9943 14.1428 5.14286 14.1429H16.7143V12.8571H5.67L5.15571 10.2857H16.7143C16.8605 10.2857 17.0024 10.2358 17.1165 10.1443C17.2305 10.0528 17.31 9.92511 17.3417 9.78236L18.7997 3.21429H17.4838L16.1987 9H4.89857L3.20143 0.516857Z"
-                    fill="#F1F1F1"
-                  />
-                  <path
-                    d="M11.5715 2.57143V0H10.2858V2.57143H7.71436V3.85714H10.2858V6.42857H11.5715V3.85714H14.1429V2.57143H11.5715Z"
-                    fill="#F1F1F1"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-        </div>
       </div>
- 
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="js/CardGeneratorLists.js"></script>
+      <script src="js/shopCardGeneratorListHandler.js"></script>
+      <script src="js/shopCardGenFunctions.js"></script>
+      <script src="js/shopCardGenerator.js"></script>
+      <script>
+        
+        $(function () {
+          let duration = 300;
+          $("#accordion-1").click(function () {
+            $("#filterItems1").slideToggle(duration);
+          });
+          $("#accordion-2").click(function () {
+            $("#filterItems2").slideToggle(duration);
+          });
+          $("#accordion-3").click(function () {
+            $("#filterItems3").slideToggle(duration);
+          });
+          $("#accordion-4").click(function () {
+            $("#filterItems4").slideToggle(duration);
+          });
+          $("#accordion-5").click(function () {
+            $("#filterItems5").slideToggle(duration);
+          });
+          $("#accordion-6").click(function () {
+            $("#filterItems6").slideToggle(duration);
+          });
+          $("#accordion-7").click(function () {
+            $("#filterItems7").slideToggle(duration);
+          });
+          $("#accordion-8").click(function () {
+            $("#filterItems8").slideToggle(duration);
+          });
+          $("#accordion-9").click(function () {
+            $("#filterItems9").slideToggle(duration);
+          });
+          $("#accordion-10").click(function () {
+            $("#filterItems10").slideToggle(duration);
+          });
+          $("#accordion-11").click(function () {
+            $("#filterItems11").slideToggle(duration);
+          });
+          $("#accordion-12").click(function () {
+            $("#filterItems12").slideToggle(duration);
+          });
+          $("#accordion-13").click(function () {
+            $("#filterItems13").slideToggle(duration);
+          });
+        });
+       let inConnectorOn = document.getElementById("inConnectorOn");
+       
+
+      
+      //  test=()=>{
+      //    if(inConnectorOn.checked){
+      //     alert(" conctor is on")
+      //    }
+      //  }
+
+         
+         shopCardCreator=() =>{
+          let productGrid = document.getElementById("productGrid");
+          let NewShopCard = document.productGrid.createElement("div.shopCard");
+          let newImg=document.body.appendChild(img);
+        }
+      </script>
     </body>
   </html>
 </html>
