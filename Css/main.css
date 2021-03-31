@@ -863,10 +863,11 @@ button {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-  border-radius: 10px;
-  overflow: visible;
+  border-radius: 15px;
   -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
           box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+  overflow: visible;
+  box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
   margin-right: 20px;
 }
 
@@ -892,7 +893,9 @@ button {
 .infoCard {
   position: relative;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+          box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
   margin-top: 20px;
   padding: 20px;
   max-width: 340px;
@@ -1018,7 +1021,7 @@ header a, header button {
 
 .nav-links-container a {
   color: #f1f1f1;
-  border-bottom: solid 1px #7D98A1;
+  border-bottom: solid 1px #7d98a1;
   padding: 10px 0;
 }
 
@@ -1063,7 +1066,7 @@ header a, header button {
 }
 
 .desktop-nav .desktop-search input {
-  border-bottom: solid 1px #7D98A1;
+  border-bottom: solid 1px #7d98a1;
   width: 175px;
   padding: 0 10px 5px 10px;
 }
@@ -1074,35 +1077,98 @@ header a, header button {
   height: 50px;
 }
 
-.nav-bottom li {
-  height: 100%;
-}
-
-.nav-bottom a {
-  height: 100%;
-  color: #1f1f1f;
-  font-weight: 400;
+.nav-bottom > li {
   height: 100%;
   position: relative;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
-.nav-bottom a::before {
+.nav-bottom > li::before {
   content: "";
   display: block;
   position: absolute;
   bottom: 0;
-  width: 140%;
+  width: 100%;
+  height: 2px;
+  background-color: #fe0000;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.nav-bottom > li:hover a {
+  color: #fe0000;
+}
+
+.nav-bottom > li:hover .drop-down {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.nav-bottom > li:hover .drop-down::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav-bottom > li:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav-bottom > li > a {
+  height: 100%;
+  padding: 0 30px;
+  color: #1f1f1f;
+  font-weight: 400;
+  height: 100%;
+}
+
+.nav-bottom .drop-down {
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+          box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.nav-bottom .drop-down li a {
+  padding: 10px 20px;
+  color: #1f1f1f;
+  white-space: nowrap;
+}
+
+.nav-bottom .drop-down li a:hover {
+  color: #fe0000;
+}
+
+.nav-bottom .drop-down::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  width: 100%;
+  top: -2px;
   height: 2px;
   background-color: #fe0000;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-}
-
-.nav-bottom a:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
 }
 
 footer {
@@ -1117,7 +1183,7 @@ footer {
 
 .footer-links > div {
   padding: 20px 0;
-  border-bottom: solid 1px #7D98A1;
+  border-bottom: solid 1px #7d98a1;
 }
 
 .footer-links button, .footer-links a {
@@ -1188,11 +1254,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: solid 1px #7D98A1;
+  border-top: solid 1px #7d98a1;
 }
 
 .footer-copyRight span {
-  color: #7D98A1;
+  color: #7d98a1;
   margin: 5px 0;
 }
 
@@ -1330,6 +1396,14 @@ footer {
   display: none;
 }
 
+.no-psoudo::after {
+  display: none !important;
+}
+
+.no-psoudo::before {
+  display: none !important;
+}
+
 .hero img {
   margin-top: 60px;
 }
@@ -1423,7 +1497,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  top: 100px;
+  top: 150px;
 }
 
 @media (max-width: 555px) {
@@ -1437,10 +1511,12 @@ footer {
 .productGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(22.5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
   grid-row-gap: 4rem;
-  background-color: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .productGrid .shopCard {
@@ -1456,7 +1532,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #527ac5;
+  background-color: #214252;
   border-radius: 30px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1474,26 +1550,69 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 35px;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: rgba(241, 241, 241, 0.49);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 5px 5px;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.filter ul > span {
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-  .dn-to-df {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mobile-nav {
-    display: none;
-  }
+.filter ul > span svg {
+  padding-bottom: 10px;
+}
+
+.filterItems {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: -19px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px 0 10px 0;
+}
+
+.filterItems span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterItems span label {
+  padding-right: 10px;
+  color: #1f1f1f;
+}
+
+.cardImg {
+  height: 140px;
+  width: 165px;
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 768px) {

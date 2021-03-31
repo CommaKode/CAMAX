@@ -87,16 +87,16 @@
   width: 100%;
   display: flex;
   position: relative;
-  top: 100px;
+  top: 150px;
   @include filterInSmall {
     justify-content: center;
   }
 }
 .productGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
   grid-row-gap: 4rem;
-  background-color: black;
+  height: fit-content;
   .shopCard {
     margin-left: auto;
     margin-right: auto;
@@ -105,7 +105,7 @@
 .filter {
   display: flex;
   flex-direction: column;
-  background-color: rgb(82, 122, 197);
+  background-color: $filterBgcolor;
   border-radius: $filterContainerRadius;
   height: fit-content;
   padding: $filterContainerPadding;
@@ -114,7 +114,54 @@
   }
   ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    height:35px;
+    position: relative;
+    transition: all .5s ease;
+    > span {
+      padding-right: 10px;
+      display: flex;
+      justify-content: space-between;
+      svg{
+        padding-bottom: 10px;
+      }
+    }
+    background-color: $filterULcolor;
+    border-radius: $radiusPrimary;
+    margin-bottom: $filterUlMargin;
+    padding: $filterUlPadding;
+    border: $filterUlBorder;
+    color: $white;
+    white-space: nowrap;
   
   }
 }
+.filterItems {
+  display: none;
+    flex-direction: column;
+    position: relative;
+    top: -19px;
+    border-radius: $filterItemsRadius;
+    background-color: $white;
+    padding:$filterItemsPadding;
+
+    
+  span{
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    label{
+      padding-right: 10px;
+      color: $black;
+    }
+  }
+}
+
+// card generator classes
+ .cardImg {
+  height: 140px;
+  width: 165px;
+  margin-top: 25px;
+}
+
+
