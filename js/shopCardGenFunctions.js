@@ -6,6 +6,9 @@
 // toUpper = (x) => {
 //   return x.toUpperCase();
 // };
+
+
+
 function shopCardCreator() {
   for (let index = 1; index <= numberOfCards; index++) {
     // creating new div
