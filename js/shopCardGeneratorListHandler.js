@@ -120,10 +120,7 @@ let key = () => {
 
 key();
 
-console.log(pNameList)
-console.log(pPriceList)
-console.log(pSrcList)
-console.log(inConnectorList)
+
 // to upperCase function
 toUpper = (x) => {
   return x.toUpperCase();

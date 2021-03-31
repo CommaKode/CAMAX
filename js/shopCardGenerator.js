@@ -34,6 +34,33 @@ shopCardGenerator();
 //         }
 //         }
 //     };
+
+// number of the filters
+let filtersNumbers = 13;
+
+
+// assign id to p tags in filters (filtrer names)
+assignIdForFilters=()=>{
+  for (let index = 1; index <= filtersNumbers; index++) {
+        
+        if (document.querySelector(`#accordion-${index} > span > p`).innerText==="حافظه") {
+
+        }
+       
+  }
+}
+
+
+assignIdForFilters()
+
+
+
+//
+//
+// filter function
+//
+//
+
 document.getElementById("inConnectorOn").onchange = function () {
   for (let index = 1; index <= numberOfCards; index++) {
     if (this.checked) {
