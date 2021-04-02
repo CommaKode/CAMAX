@@ -70,7 +70,7 @@ let cardCounter = 0;
 let pNameList = [];
 let pPriceList = [];
 let pSrcList = [];
-let inConnectorList=[];
+let inConnectorOnList=[];
 
 //
 //
@@ -84,11 +84,11 @@ let key = () => {
     for (let index = 1; index <= numberOfCards; index++) {
       let name = monitorNames[counter].productName;
       let price = monitorNames[counter].productPrice;
-      let connector = monitorNames[counter].inConnector;
+      let connector = monitorNames[counter].inConnectorOn;
       // let src = monitorNames[counter].productSrc;
       pNameList.push(name);
       pPriceList.push(price);
-      inConnectorList.push(connector);
+      inConnectorOnList.push(connector);
       
       // pSrcList.push(src)
       counter++;
@@ -119,7 +119,6 @@ let key = () => {
 };
 
 key();
-
 
 // to upperCase function
 toUpper = (x) => {

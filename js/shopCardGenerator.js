@@ -2,6 +2,9 @@
 //
 // Main Generator
 //
+
+
+
 //
 shopCardGenerator = () => {
   shopCardCreator();
@@ -13,45 +16,76 @@ shopCardGenerator = () => {
 };
 shopCardGenerator();
 
-
-    
 // document.getElementById("inConnectorOn").onchange = function () {
 //   for (let index = 1; index <= numberOfCards; index++) {
 //     if (this.checked) {
 //         let counter = 0;
 //       let pn1 = document.getElementById(`productName${index}`).innerText;
-      
+
 //       if (
 //         (pn1.toUpperCase() ===
 //           pNameList[counter] && inConnectorList[counter] == "on")
 //           ) {
-//             document.getElementById(`card${index}`).classList.add("dn");  
+//             document.getElementById(`card${index}`).classList.add("dn");
 //           }
 //           counter++
 //         }else{
-          
-//           document.getElementById(`card${index}`).classList.remove("dn");  
+
+//           document.getElementById(`card${index}`).classList.remove("dn");
 //         }
 //         }
 //     };
 
-// number of the filters
+// number of filters
 let filtersNumbers = 13;
 
-
 // assign id to p tags in filters (filtrer names)
-assignIdForFilters=()=>{
+assignIdForFilters = () => {
   for (let index = 1; index <= filtersNumbers; index++) {
-        
-        if (document.querySelector(`#accordion-${index} > span > p`).innerText==="حافظه") {
+    if (
+      document.querySelector(`#accordion-${index} > span > p`).innerText ===
+      "ازتباط داخلی"
+    ) {
+      document.querySelector(
+        `#filterItems${index} > span:first-child > input`
+      ).onchange = function () {
+        if (this.checked) {
+          let counter = 0;
+          let pn1 = document.getElementById(`productName${index}`).innerText;
+          
+          let optionList = $(
+            `#filterItems${index} span:first-child input`
+          ).attr("id");
 
-        }
-       
+          if (
+            pn1.toUpperCase() === pNameList[counter] &&
+            `${optionList}List`[counter] == "on"
+          ) {
+            document.getElementById(`card${index}`).classList.add("dn");
+          }
+          counter++;
+        }else {
+                document.getElementById(`card${index}`).classList.remove("dn");
+              }
+      };
+    }
   }
-}
+};
+
+assignIdForFilters();
 
 
-assignIdForFilters()
+
+
+let optionList = $(
+  `#filterItems4 span:first-child input`
+).attr("id")+"List";
+let b = optionList
+console.log(optionList)
+console.log(inConnectorOnList[4])
+console.log(optionList[4])
+
+
 
 
 
@@ -61,24 +95,21 @@ assignIdForFilters()
 //
 //
 
-document.getElementById("inConnectorOn").onchange = function () {
-  for (let index = 1; index <= numberOfCards; index++) {
-    if (this.checked) {
-        let counter = 0;
-      let pn1 = document.getElementById(`productName${index}`).innerText;
-      
-      if (
-        (pn1.toUpperCase() ===
-          pNameList[counter] && inConnectorList[counter] == "on")
-          ) {
-            document.getElementById(`card${index}`).classList.add("dn");  
-          }
-          counter++
-        }else{
-          
-          document.getElementById(`card${index}`).classList.remove("dn");  
-        }
-        }
-    };
-    
+// document.getElementById("inConnectorOn").onchange = function () {
+//   for (let index = 1; index <= numberOfCards; index++) {
+//     if (this.checked) {
+//       let counter = 0;
+//       let pn1 = document.getElementById(`productName${index}`).innerText;
 
+//       if (
+//         pn1.toUpperCase() === pNameList[counter] &&
+//         inConnectorList[counter] == "on"
+//       ) {
+//         document.getElementById(`card${index}`).classList.add("dn");
+//       }
+//       counter++;
+//     } else {
+//       document.getElementById(`card${index}`).classList.remove("dn");
+//     }
+//   }
+// };
