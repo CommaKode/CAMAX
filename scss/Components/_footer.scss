@@ -1,14 +1,30 @@
 footer {
     background-color: $sectionColor;
     border-radius: $footerRadius;
-    margin-top: $divMargin;
+    margin-top: $sectionMargin;
+    a {
+        font-size: $smallFontSize;
+    }
 }
 .footer-links {
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
     >div {
         padding: $menuBtnPadding;
         border-bottom: $borderLine;
+<<<<<<< HEAD
+=======
+        ul li a {
+            margin-top: 5px;
+            color: $lightBlue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+>>>>>>> 3980785b1542ff92cf23ecfbf3243ecbe9b23c06
     }
     button, a {
         color: $gray;
@@ -32,7 +48,8 @@ footer {
     .address {
         height: 200px;
         padding: $addressPadding;
-        align-items: flex-end;
+        align-items: flex-start;
+        margin-left: 7%;
         margin-right: $partMargin;
         span {
             line-height: 25px;

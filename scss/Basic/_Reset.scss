@@ -46,5 +46,12 @@ textarea, button, input {
 }
 button {
     background-color: transparent;
+    cursor: pointer;
+}
+
+// reseting typography
+
+h1, h2, h3, h4, h5 {
+    font-weight: $regWeight;
 }
 

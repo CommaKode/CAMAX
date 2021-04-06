@@ -8,8 +8,12 @@
     display: block;
     position: absolute;
     bottom: 0;
+<<<<<<< HEAD
 }
 // filter mixim
+=======
+};
+>>>>>>> 3980785b1542ff92cf23ecfbf3243ecbe9b23c06
 
 @mixin filterInSmall {
     @media (max-width: #{$filterInSmall}){
@@ -20,4 +24,4 @@
     background-color: $white;
     border-radius: $radius;
     box-shadow: $cardShadow;
-}
+};

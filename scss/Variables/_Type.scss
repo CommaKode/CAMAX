@@ -2,19 +2,43 @@
 $mainFontFamily : bYekan;
 
 
-// defining font mobile sizes;
-$htmlFontSize : 62.5%;
-$h1FontSize : 3.8rem;
-$h2FontSize : 3.2rem;
-$h3FontSize : 2rem;
-$mainFontSize : 1.6rem;
-$smallFontSize : 1.4rem;
+// mobile font sizes;
+$htmlFontSize  : 62.5%;
+$h1FontSize    : 2.8rem;
+$h2FontSize    : 2.4rem;
+$h3FontSize    : 2rem;
+$mainFontSize  : 1.4rem;
+$smallFontSize : 1.2rem;
 
-//defining component font sizes
+// desktop font sizes
+$lgFonts: (
+    h1      : 4.2rem,
+    h2      : 3.6rem,
+    h3      : 2.8rem,
+    primary : 1.6rem,
+    small   : 1.4rem,
+    );
+
+    @function lgFont($Fsize) {
+        @return map-get($lgFonts, $Fsize);
+    };
+    
+    
+    $xxxlFonts: (
+    h1 : 6.2rem,
+    h2 : 4.2rem,
+    h3 : 3.8rem,
+    primary : 1.8rem,
+    small : 1.6rem
+    );
+    
+    @function xxxlFont($xxxlsize) {
+        @return map-get($xxxlFonts, $xxxlsize);
+    };
+
+    //defining component font sizes
 $btnFontSize : $mainFontSize;
 $footerLinkFontSize : $h3FontSize;
-
-
 
 //defining font weights
 $regWeight : 400;

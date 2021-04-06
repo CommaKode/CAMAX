@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 65px;
+  height: $navTopHeight;
   background-color: $white;
   position: relative;
   .nav-top {
@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: $mainFontSize;
 }
 
 //mobile nav bar when toggle is off
@@ -52,14 +53,16 @@ header {
 // mobile nav bar when the toggle is on
 
 #nav-bar {
+  // nav bar off
+  transform: translatey(-100%);
+  display: none;
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: $black;
-  // nav bar off
-  transform: translatey(-100%);
   transition: $primaryTransition;
   z-index: 100;
 }
@@ -67,7 +70,7 @@ header {
 // mobile search
 
 .nav-container {
-  margin-top: 85px;
+  margin-top: $navTopHeight + 20px;
 }
 #searching {
   height: 35px;
@@ -127,10 +130,19 @@ header {
       margin-right: $partMargin;
       path {
         fill: $black;
+        transition: $primaryTransition;
       }
     }
-    button svg {
-      margin-right: 0;
+    button {
+      &:hover svg path {
+        fill: $primaryColor;
+      }
+      svg {
+        margin-right: 0;
+      }
+    }
+    a:hover svg path {
+      fill: $primaryColor;
     }
   }
   .desktop-search {
@@ -139,6 +151,11 @@ header {
       border-bottom: $borderLine;
       width: 175px;
       padding: 0 10px 5px 10px;
+
+      &:focus ~ button svg path,
+      &:hover ~ button svg path {
+        fill: $lightBlue;
+      }
     }
   }
 }
@@ -147,7 +164,7 @@ header {
 
 .nav-bottom {
   background-color: $white;
-  @include box(100%, 50px);
+  @include box(100%, $navBottomHeight);
   > li {
     height: 100%;
     position: relative;
@@ -163,6 +180,9 @@ header {
     &:hover {
       a {
         color: $primaryColor;
+        svg path {
+          fill: $primaryColor;
+        }
       }
       .drop-down {
         transform: scaleY(1);
@@ -180,6 +200,13 @@ header {
       color: $black;
       font-weight: 400;
       height: 100%;
+
+      span {
+        margin-right: $elementMargin;
+      }
+      svg path {
+        fill: $lightBlue;
+      }
     }
   }
 
@@ -192,7 +219,6 @@ header {
     min-width: 100%;
     transition: $primaryTransition;
     transform-origin: top;
-    // transition-delay: .2s;
     li {
       a {
         padding: 10px 20px;
