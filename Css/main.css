@@ -793,6 +793,7 @@ textarea, button, input {
   outline: none;
   font-family: bYekan;
   resize: none;
+<<<<<<< HEAD
 }
 
 button {
@@ -802,6 +803,8 @@ button {
 
 h1, h2, h3, h4, h5 {
   font-weight: 400;
+=======
+>>>>>>> b8663d9d9dcdf0808ca2ef38e978fb10be9a107c
 }
 
 .shopBtn {
@@ -1444,6 +1447,38 @@ footer a {
   position: absolute;
   display: block;
   right: 105%;
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.range-slider:hover {
+  opacity: 1;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
 }
 
 .dn {
