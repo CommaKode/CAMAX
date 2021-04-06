@@ -3,8 +3,6 @@
 // Main Generator
 //
 
-
-
 //
 shopCardGenerator = () => {
   shopCardCreator();
@@ -16,100 +14,153 @@ shopCardGenerator = () => {
 };
 shopCardGenerator();
 
-// document.getElementById("inConnectorOn").onchange = function () {
-//   for (let index = 1; index <= numberOfCards; index++) {
-//     if (this.checked) {
-//         let counter = 0;
-//       let pn1 = document.getElementById(`productName${index}`).innerText;
-
-//       if (
-//         (pn1.toUpperCase() ===
-//           pNameList[counter] && inConnectorList[counter] == "on")
-//           ) {
-//             document.getElementById(`card${index}`).classList.add("dn");
-//           }
-//           counter++
-//         }else{
-
-//           document.getElementById(`card${index}`).classList.remove("dn");
-//         }
-//         }
-//     };
-
 // number of filters
 let filtersNumbers = 13;
 
-// assign id to p tags in filters (filtrer names)
-assignIdForFilters = () => {
-  for (let index = 1; index <= filtersNumbers; index++) {
-    if (
-      document.querySelector(`#accordion-${index} > span > p`).innerText ===
-      "ازتباط داخلی"
-    ) {
-      document.querySelector(
-        `#filterItems${index} > span:first-child > input`
-      ).onchange = function () {
-        if (this.checked) {
-          let counter = 0;
-          let pn1 = document.getElementById(`productName${index}`).innerText;
-          
-          let optionList = $(
-            `#filterItems${index} span:first-child input`
-          ).attr("id");
+let test = false;
 
-          if (
-            pn1.toUpperCase() === pNameList[counter] &&
-            `${optionList}List`[counter] == "on"
-          ) {
-            document.getElementById(`card${index}`).classList.add("dn");
-          }
-          counter++;
-        }else {
-                document.getElementById(`card${index}`).classList.remove("dn");
-              }
-      };
-    }
+const arrayFunction = function (id, index) {
+  console.log(id);
+  if (id == "inConnectorOnList") {
+    id = inConnectorOnList[index];
+  } else if (id == "sdOnList") {
+    id = sdOnList[index];
+  } else if (id == "phoneOnList") {
+    id = phoneOnList[index];
+  } else if (id == "openerOnList") {
+    id = openerOnList[index];
+    test = true;
+  } else if (id == "touchOnList") {
+    id = touchOnList[index];
+  } else if (id == "cartOnList") {
+    id = cartOnList[index];
+  } else if (id == "telephoneOnList") {
+    id = telephoneOnList[index];
+  } else if (id == "cameraOnList") {
+    id = cameraOnList[index];
+  } else if (id == "twoPanelOnList") {
+    id = twoPanelOnList[index];
+  } else if (id == "guardOnList") {
+    id = guardOnList[index];
+  } else if (id == "lockOnList") {
+    id = lockOnList[index];
   }
+
+  return id;
 };
 
-assignIdForFilters();
+let arrayName = "";
+let filterFunction1 = () => {
+  let counter = 0;
+  for (let index = 1; index <= numberOfCards; index++) {
+    if (arrayFunction(arrayName, index - 1) == "off") {
+      document.getElementById(`card${index}`).classList.add("dn");
+    }
+    counter++;
+  }
+};
+let filterFunction2 = () => {
+  for (let index = 1; index <= numberOfCards; index++) {
+    document.getElementById(`card${index}`).classList.remove("dn");
+  }
+};
+let b = $(".filterItems > span:first-child").children("input");
 
+b[2].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[3].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[4].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[5].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
-let optionList = $(
-  `#filterItems4 span:first-child input`
-).attr("id")+"List";
-let b = optionList
-console.log(optionList)
-console.log(inConnectorOnList[4])
-console.log(optionList[4])
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[6].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[7].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[8].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[9].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[10].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
-//
-//
-// filter function
-//
-//
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[11].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
-// document.getElementById("inConnectorOn").onchange = function () {
-//   for (let index = 1; index <= numberOfCards; index++) {
-//     if (this.checked) {
-//       let counter = 0;
-//       let pn1 = document.getElementById(`productName${index}`).innerText;
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};
+b[12].onchange = function () {
+  arrayName = $(this).attr("id") + "List";
 
-//       if (
-//         pn1.toUpperCase() === pNameList[counter] &&
-//         inConnectorList[counter] == "on"
-//       ) {
-//         document.getElementById(`card${index}`).classList.add("dn");
-//       }
-//       counter++;
-//     } else {
-//       document.getElementById(`card${index}`).classList.remove("dn");
-//     }
-//   }
-// };
+  if (this.checked) {
+    filterFunction1();
+  } else {
+    filterFunction2();
+  }
+};

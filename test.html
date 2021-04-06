@@ -27,9 +27,22 @@
   </head>
   <body>
     <div class="productGrid" id="productGrid"></div>
+ <div class="filter">
+  <p>adwwad</p>
+  <button id="b1">adawwda</button>
+ </div>
     <!-- <button onclick="shopCardCreator2()">create</button> -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
+      $(`.filter`)
+  .find("button").click(function(){
+    let thisId= '#'+$(this).attr('id')
+    console.log($('thisId'))
+    console.log($('thisId').prev('p').text())
+    console.log($('#b1').prev('p').text())
+
+  })
+      
       let monitorNames = [
         "cdv-guard",
         "cdv-43d",

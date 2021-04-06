@@ -71,6 +71,17 @@ let pNameList = [];
 let pPriceList = [];
 let pSrcList = [];
 let inConnectorOnList=[];
+let sdOnList=[]
+let phoneOnList=[]
+let openerOnList=[]
+let touchOnList=[]
+let cartOnList=[]
+let telephoneOnList=[]
+let cameraOnList=[]
+let twoPanelOnList=[]
+let guardOnList=[]
+let lockOnList=[]
+console.log(sdOnList)
 
 //
 //
@@ -85,10 +96,30 @@ let key = () => {
       let name = monitorNames[counter].productName;
       let price = monitorNames[counter].productPrice;
       let connector = monitorNames[counter].inConnectorOn;
+      let sd = monitorNames[counter].sdOn;
+      let phone = monitorNames[counter].phoneOn;
+      let openner = monitorNames[counter].openerOn;
+      let touch = monitorNames[counter].touchOn;
+      let cart = monitorNames[counter].cartOn;
+      let telephone = monitorNames[counter].telephoneOn;
+      let camera = monitorNames[counter].cameraOn;
+      let twoPanel = monitorNames[counter].twoPanelOn;
+      let guard = monitorNames[counter].guardOn;
+      let lock = monitorNames[counter].lockOn;
       // let src = monitorNames[counter].productSrc;
       pNameList.push(name);
       pPriceList.push(price);
       inConnectorOnList.push(connector);
+      sdOnList.push(sd)
+      phoneOnList.push(phone)
+      openerOnList.push(openner)
+      touchOnList.push(touch)
+      cartOnList.push(cart)
+      telephoneOnList.push(telephone)
+      cameraOnList.push(camera)
+      twoPanelOnList.push(twoPanel)
+      guardOnList.push(guard)
+      lockOnList.push(lock)
       
       // pSrcList.push(src)
       counter++;

@@ -44,8 +44,8 @@ let monitorNames = [
     productName: "cdv-guard",
     productPrice: "1200000000",
     size: "4.3",
-    sdOn: "on",
-    inConnectorOn: "on",
+    sdOn: "off",
+    inConnectorOn: "off",
     phoneOn: "on",
     openerOn: "on",
     touchOn: "off",
@@ -66,7 +66,7 @@ let monitorNames = [
     openerOn: "off",
     touchOn: "on",
     cartOn: "off",
-    telephoneOn: "on",
+    telephoneOn: "off",
     cameraOn: "off",
     twoPanelOn: "o",
     guardOn: "on",
@@ -267,3 +267,18 @@ let panelNames = [
   { productName: "expander", productPrice: "1200000", productSrc: "" },
 ];
 let lateralNames = ["ntcs", "tag", "video-amplifire", "trans1", "trans2"];
+let filterNames = [
+  "",
+  "",
+  "sdOn",
+  "inConnectorOn",
+  "phoneOn",
+  "openerOn",
+  "touchOn",
+  "cartOn",
+  "telephoneOn",
+  "cameraOn",
+  "twoPanelOn",
+  "guardOn",
+  "lockOn",
+];
