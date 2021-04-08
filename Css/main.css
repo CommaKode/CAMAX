@@ -905,10 +905,10 @@ h1, h2, h3, h4, h5 {
           align-items: center;
   background-color: #ffffff;
   border-radius: 15px;
-  -webkit-box-shadow: -4px 4px 20px 0px #1f1f1f;
-          box-shadow: -4px 4px 20px 0px #1f1f1f;
+  -webkit-box-shadow: -4px 4px 20px 0px #6c6060;
+          box-shadow: -4px 4px 20px 0px #6c6060;
   overflow: visible;
-  box-shadow: -4px 4px 20px 0px #1f1f1f;
+  box-shadow: -4px 4px 20px 0px #6c6060;
   margin-right: 20px;
 }
 
@@ -931,8 +931,8 @@ h1, h2, h3, h4, h5 {
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
-  -webkit-box-shadow: -4px 4px 20px 0px #1f1f1f;
-          box-shadow: -4px 4px 20px 0px #1f1f1f;
+  -webkit-box-shadow: -4px 4px 20px 0px #6c6060;
+          box-shadow: -4px 4px 20px 0px #6c6060;
   margin-top: 20px;
   padding: 20px;
   max-width: 340px;
@@ -1198,8 +1198,8 @@ header a, header button {
 .nav-bottom .drop-down {
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
-  -webkit-box-shadow: -4px 4px 20px 0px #1f1f1f;
-          box-shadow: -4px 4px 20px 0px #1f1f1f;
+  -webkit-box-shadow: -4px 4px 20px 0px #6c6060;
+          box-shadow: -4px 4px 20px 0px #6c6060;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   position: absolute;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: block;
+        width: 150px;
+        height: 150px;
+      }
+      span p {
+        display: block;
+        width: 260px;
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1">
+      click me
+      <span>
+        <p id="p1">p1</p>
+      </span>
+      <!-- <p>p2</p> -->
+      <span>
+        <p>p3</p>
+      </span>
+      <p>p4</p>
+    </div>
+    <div id="div2">
+      <p>p21</p>
+      <p>p22</p>
+      <p>p23</p>
+      <p>p24</p>
+      <p>p25</p>
+    </div>
+    <div class="filterItems">
+      <span>
+        <input type="text" name="" id="inp1" />
+        <input type="text" name="" id="inp2" />
+      </span>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      let onBtnFilter = $(".filterItems > span:last-child").children("input");
+      console.log(onBtnFilter)
+
+      $("#div1").click(function () {
+        $("#p1")
+          .parent("span")
+          .next("span")
+          .children("p")
+          .css("background-color", "red");
+      });
+
+      let onFn = () => {
+        for (let index = 2; index <= onBtnFilter.length; index++) {
+          onBtnFilter[index].onchange = function () {
+            //   arrayName = $(this).attr("id") + "List";
+            if (this.checked) {
+              filterFunction1("off");
+            } else {
+              filterFunction2();
+            }
+          };
+        }
+      };
+      onFn();
+    </script>
+  </body>
+</html>
