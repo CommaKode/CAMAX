@@ -732,6 +732,8 @@
   .offright-xxxl-12 {
     margin-right: 100%;
   }
+}
+
 .h1 {
   font-size: 2.8rem;
 }
@@ -790,7 +792,6 @@ textarea, button, input {
   outline: none;
   font-family: bYekan;
   resize: none;
-<<<<<<< HEAD
 }
 
 button {
@@ -800,8 +801,6 @@ button {
 
 h1, h2, h3, h4, h5 {
   font-weight: 400;
-=======
->>>>>>> b8663d9d9dcdf0808ca2ef38e978fb10be9a107c
 }
 
 .shopBtn {
@@ -906,10 +905,10 @@ h1, h2, h3, h4, h5 {
           align-items: center;
   background-color: #ffffff;
   border-radius: 15px;
-  -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D08;
-          box-shadow: -4px 4px 20px 0px #6D6D6D08;
+  -webkit-box-shadow: -4px 4px 20px 0px #1f1f1f;
+          box-shadow: -4px 4px 20px 0px #1f1f1f;
   overflow: visible;
-  box-shadow: -4px 4px 20px 0px #6D6D6D08;
+  box-shadow: -4px 4px 20px 0px #1f1f1f;
   margin-right: 20px;
 }
 
@@ -932,8 +931,8 @@ h1, h2, h3, h4, h5 {
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
-  -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D08;
-          box-shadow: -4px 4px 20px 0px #6D6D6D08;
+  -webkit-box-shadow: -4px 4px 20px 0px #1f1f1f;
+          box-shadow: -4px 4px 20px 0px #1f1f1f;
   margin-top: 20px;
   padding: 20px;
   max-width: 340px;
@@ -1124,7 +1123,7 @@ header a, header button {
 
 .desktop-nav .desktop-search input:focus ~ button svg path,
 .desktop-nav .desktop-search input:hover ~ button svg path {
-  fill: #7D98A1;
+  fill: #7d98a1;
 }
 
 .nav-bottom {
@@ -1193,14 +1192,14 @@ header a, header button {
 }
 
 .nav-bottom > li > a svg path {
-  fill: #7D98A1;
+  fill: #7d98a1;
 }
 
 .nav-bottom .drop-down {
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
-  -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D08;
-          box-shadow: -4px 4px 20px 0px #6D6D6D08;
+  -webkit-box-shadow: -4px 4px 20px 0px #1f1f1f;
+          box-shadow: -4px 4px 20px 0px #1f1f1f;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   position: absolute;
@@ -1270,7 +1269,7 @@ footer a {
 
 .footer-links > div ul li a {
   margin-top: 5px;
-  color: #7D98A1;
+  color: #7d98a1;
 }
 
 .footer-links > div ul li a:hover {
@@ -1520,6 +1519,14 @@ footer a {
   display: none;
 }
 
+.fade {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
 .no-psoudo::after {
   display: none !important;
 }
@@ -1535,61 +1542,25 @@ footer a {
           flex-direction: column;
 }
 
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: calc(100vh - (125px));
-  min-height: 700px;
-}
-
-.hero .hero-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 20px;
-  max-width: 560px;
-}
-
-.hero .hero-btns a {
-  margin-top: 15px;
-}
-
 .hero img {
   margin-top: 60px;
 }
 
-.hero .hero-h {
-  margin-top: 60px;
+.hero a {
+  margin-top: 20px;
 }
 
-.hero .hero-h h1 span {
+.hero h1 {
+  font-size: 2.8rem;
+  margin-top: 40px;
+}
+
+.hero h1 span {
   color: #fe0000;
 }
 
-.hero .hero-h p {
-  margin-top: 20px;
-  text-align: center;
+.hero h2 {
+  font-size: 2.4rem;
 }
 
 .shop-section {
@@ -1616,8 +1587,12 @@ footer a {
           align-items: center;
 }
 
+.shop-section .shop .illustration {
+  width: 150px;
+}
+
 .shop-section .shop .illustration img {
-  width: 90px;
+  height: 60px;
   display: block;
 }
 
@@ -1638,69 +1613,20 @@ footer a {
   margin-bottom: 60px;
 }
 
-.shop-section .shop .cards div:last-child {
-  margin-left: 20px;
-}
-
-.about-us {
-  margin-top: 100px;
-}
-
-.about-us > div {
-  margin-top: 0;
-}
-
-.about-us > div > h3 {
+.about-us h3 {
+  font-size: 2.4rem;
   color: #1f1f1f;
 }
 
-.about-us > div > h3 span {
+.about-us h3 span {
   color: #fe0000;
 }
 
-.about-us > div > p {
+.about-us p {
   margin-top: 20px;
-  color: #7D98A1;
+  color: #1f1f1f;
+  font-size: 1.4rem;
   font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.about-us .info-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.info-box {
-  width: 100%;
-  height: auto;
-}
-
-.aboutus-bg {
-  margin-top: 60px;
-  position: absolute;
-  width: 80%;
-  height: 900px;
-  background-color: #061928;
-  z-index: -1;
-  display: none;
-  border-radius: 20px 0 0 20px;
-}
-
-@media screen and (min-width: 576px) {
-  .hero {
-    min-height: 800px;
-  }
 }
 
 .productContainer {
@@ -1827,6 +1753,12 @@ footer a {
   margin-top: 25px;
 }
 
+@media screen and (min-width: 576px) {
+  .hero {
+    min-height: 800px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .h1 {
     font-size: 4.2rem;
@@ -1951,13 +1883,10 @@ footer a {
     list-style-type: disc;
   }
   .footer-links > div ul li {
-    color: #7D98A1;
+    color: #7d98a1;
   }
   .footer-links button span {
     display: none;
-  }
-  .dn {
-    display: block;
   }
   .footer-address .address {
     margin-left: 10%;
