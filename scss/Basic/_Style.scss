@@ -3,7 +3,6 @@
 //
 
 .hero {
-<<<<<<< HEAD
   img {
     margin-top: 60px;
   }
@@ -15,7 +14,6 @@
     margin-top: 40px;
     span {
       color: $primaryColor;
-=======
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -48,7 +46,6 @@
             margin-top: $partMargin;
             text-align: center;
         }
->>>>>>> 3980785b1542ff92cf23ecfbf3243ecbe9b23c06
     }
   }
   h2 {
@@ -85,13 +82,11 @@
         font-weight: 400;
       }
     }
-<<<<<<< HEAD
     .cards {
       display: flex;
       justify-content: flex-start;
       margin-top: $sectionMargin;
       margin-bottom: $sectionMargin;
-=======
     .shop {
         overflow: scroll;
         display: flex;
@@ -117,7 +112,6 @@
                 margin-left: $partMargin;
             }
         }
->>>>>>> 3980785b1542ff92cf23ecfbf3243ecbe9b23c06
     }
   }
 }
@@ -127,7 +121,6 @@
 //
 
 .about-us {
-<<<<<<< HEAD
   h3 {
     font-size: $h2FontSize;
     color: $black;
@@ -229,7 +222,6 @@
 }
 
 
-=======
     margin-top: $sectionMargin + $divMargin;
     > div {
         margin-top: 0;
@@ -267,4 +259,4 @@
     display: none;
     border-radius: 20px 0 0 20px;
 }
->>>>>>> 3980785b1542ff92cf23ecfbf3243ecbe9b23c06
+}
