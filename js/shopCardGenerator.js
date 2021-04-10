@@ -75,222 +75,33 @@ let offBtnFilter = $(".filterItems > span:last-child").children("input");
 
 //////
 ///////
-/////// functions set on on buttons تابع برای دارد ها
+/////// functions set (on) on buttons تابع برای دارد ها
 ///////
 ///////
-
-
-onBtnFilter[2].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[3].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[4].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[5].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[6].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[7].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[8].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[9].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[10].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[11].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
-onBtnFilter[12].onchange = function () {
-  arrayName = $(this).attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("off");
-  } else {
-    filterFunction2();
-  }
-};
+onBtnFilter.each(function () {
+  $(this).change(function () {
+    arrayName = $(this).attr("id") + "List";
+    if (this.checked) {
+      filterFunction1("off");
+    } else {
+      filterFunction2();
+    }
+  });
+});
+//////
+///////
+/////// functions set (off) on buttons تابع برای ندارد ها
 ///////
 ///////
-/////// functions set on off buttons تابع برای ندارد ها
-///////
-///////
+offBtnFilter.each(function () {
+  $(this).change(function () {
+    arrayName =
+      $(this).parent("span").prev("span").children("input").attr("id") + "List";
 
-offBtnFilter[2].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[3].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[4].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[5].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[6].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[7].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[8].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[9].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[10].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[11].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
-offBtnFilter[12].onchange = function () {
-  arrayName =
-    $(this).parent("span").prev("span").children("input").attr("id") + "List";
-
-  if (this.checked) {
-    filterFunction1("on");
-  } else {
-    filterFunction2();
-  }
-};
+    if (this.checked) {
+      filterFunction1("on");
+    } else {
+      filterFunction2();
+    }
+  });
+});

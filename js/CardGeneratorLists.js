@@ -54,7 +54,7 @@ let monitorNames = [
     cameraOn: "on",
     twoPanelOn: "off",
     guardOn: "on",
-    lockOn: "on",
+    lockOn: "off",
   },
   {
     productName: "cdv-43d",

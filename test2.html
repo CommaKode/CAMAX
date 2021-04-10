@@ -39,15 +39,26 @@
       <p>p25</p>
     </div>
     <div class="filterItems">
-      <span>
+      <!-- <span>
         <input type="text" name="" id="inp1" />
         <input type="text" name="" id="inp2" />
       </span>
-    </div>
+    </div> -->
+    <input list="browsers" name="browser" id="browser"  />
+    <datalist id="browsers">
+      [
+      <option value="Edge"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari"></option>
+      ]
+    </datalist>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
       let onBtnFilter = $(".filterItems > span:last-child").children("input");
-      console.log(onBtnFilter)
+      console.log(onBtnFilter);
 
       $("#div1").click(function () {
         $("#p1")
