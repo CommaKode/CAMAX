@@ -4,21 +4,7 @@
 // lists
 //
 //
-// let monitorNames = [
-//   "cdv-guardOn",
-//   "cdv-43d",
-//   "cdv-43dm",
-//   "cdv-43win",
-//   "cdv-46b",
-//   "cdv-46bm",
-//   "cdv-51d",
-//   "cdv-51dm",
-//   "cdv-70ms4",
-//   "cdv-70t4",
-//   "cdv-70tm4",
-//   "cdv-70win",
-//   "cdv-80ms4",
-// ];
+
 
 // let panelNames = [
 //   "drc-ntc1",
