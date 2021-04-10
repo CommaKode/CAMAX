@@ -8,17 +8,16 @@
     <link rel="stylesheet" href="Css/main.css">
 </head>
 <body>
-    <main>
+    <main id="servicesForm">
         <h1>خدمات پس از فروش <span>کامکث</span></h1>
-        <input type="text">
+        <input id="CName" type="text">
         <label for="">نام و نام خانوادگی :</label>
-        <input type="text">
+        <input id="CNumber" type="text">
         <label for="">شماره تلفن همراه :</label>
-        <input type="text">
-        <label for="">پست الکترونیک :</label>
-        <input type="text">
+        <input id="CEmail" type="text">
+        <label  for="">پست الکترونیک :</label>
         <label for="">نوع کالا :</label>
-        <input list="browsers" name="browser" id="productType"  />
+        <input list="productTypeBrowse" name="browser" id="productType"  />
         <datalist id="productTypeBrowse">
           [
           <option value="Edge"></option>
@@ -29,7 +28,7 @@
           ]
         </datalist>
         <label for="">نوع خدمات :</label>
-        <input list="browsers" name="browser" id="serviceType"  />
+        <input list="serviceTypeBrowse" name="browser" id="serviceType"  />
         <datalist id="serviceTypeBrowse">
           [
           <option value="aaaaaaaa"></option>
@@ -40,7 +39,7 @@
           ]
         </datalist>
         <label for="">سال تهیه ی کالا :</label>
-        <input list="browsers" name="browser" id="yearOfProduct"  />
+        <input list="yearOfProductBrowse" name="browser" id="yearOfProduct"  />
         <datalist id="yearOfProductBrowse">
           [
           <option value="Edge"></option>
@@ -50,8 +49,9 @@
           <option value="Safari"></option>
           ]
         </datalist>
+        <input type="text" name="" id="CAddress">
         <label for="">آدرس :</label>
-        <input type="text">
+        <input id="CIntroduce" type="text">
         <label for="">توضیحات :</label>
  
     </main>
