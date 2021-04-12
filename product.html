@@ -148,7 +148,7 @@
     </header>
       <div class="productContainer">
         <aside
-          class="filter offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-2 col-xl-3 col-lg-4 col-md-6 offright-sm-1 col-sm-4"
+          class="filter offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-2 col-xl-3 col-lg-4 col-md-6 offright-sm-1 col-sm-10 "
         >
           <ul id="accordion-1">
             <span>
@@ -579,46 +579,17 @@
       <script>
         
         $(function () {
-          let duration = 300;
-          $("#accordion-1").click(function () {
-            $("#filterItems1").slideToggle(duration);
-          });
-          $("#accordion-2").click(function () {
-            $("#filterItems2").slideToggle(duration);
-          });
-          $("#accordion-3").click(function () {
-            $("#filterItems3").slideToggle(duration);
-          });
-          $("#accordion-4").click(function () {
-            $("#filterItems4").slideToggle(duration);
-          });
-          $("#accordion-5").click(function () {
-            $("#filterItems5").slideToggle(duration);
-          });
-          $("#accordion-6").click(function () {
-            $("#filterItems6").slideToggle(duration);
-          });
-          $("#accordion-7").click(function () {
-            $("#filterItems7").slideToggle(duration);
-          });
-          $("#accordion-8").click(function () {
-            $("#filterItems8").slideToggle(duration);
-          });
-          $("#accordion-9").click(function () {
-            $("#filterItems9").slideToggle(duration);
-          });
-          $("#accordion-10").click(function () {
-            $("#filterItems10").slideToggle(duration);
-          });
-          $("#accordion-11").click(function () {
-            $("#filterItems11").slideToggle(duration);
-          });
-          $("#accordion-12").click(function () {
-            $("#filterItems12").slideToggle(duration);
-          });
-          $("#accordion-13").click(function () {
-            $("#filterItems13").slideToggle(duration);
-          });
+          let accordions = $('.filter').children('ul')
+          let filters =accordions.next('div')
+          console.log(filters)
+          let duration =300;
+        
+            accordions.each(function(){
+              $(this).on("click",function(){
+                $(this).next('div').slideToggle(duration)
+              })
+          })
+
         });
 
 
