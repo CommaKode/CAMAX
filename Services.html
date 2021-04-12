@@ -9,7 +9,7 @@
   </head>
   <body>
     <main id="servicesForm" class="serviceForm offright-sm-1 col-sm-10">
-      <h1> خدمات پس از فروش کامکث </h1>
+      <h1> خدمات پس از فروش <span>کامکث</span> </h1>
       <span>
         <label for="CName">نام و نام خانوادگی :</label>
         <input id="CName" type="text" />
@@ -23,7 +23,7 @@
         <input id="CEmail" type="text" />
       </span>
       <span>
-        <label for="">نوع کالا :</label>
+        <label for="productType">نوع کالا :</label>
         <input list="productTypeBrowse" name="browser" id="productType" />
         <datalist id="productTypeBrowse">
           [
@@ -36,7 +36,7 @@
         </datalist>
       </span>
       <span>
-        <label for="">نوع خدمات :</label>
+        <label for="serviceType">نوع خدمات :</label>
         <input list="serviceTypeBrowse" name="browser" id="serviceType" />
         <datalist id="serviceTypeBrowse">
           [
@@ -62,13 +62,14 @@
         </datalist>
       </span>
       <span>
-        <label for="">آدرس :</label>
+        <label for="CAddress">آدرس :</label>
         <input type="text" name="" id="CAddress" />
       </span>
       <span>
-        <label for="">توضیحات :</label>
+        <label for="CIntroduce">توضیحات :</label>
         <input id="CIntroduce" type="text" />
       </span>
+      <button>ثبت درخواست</button>
     </main>
   </body>
 </html>

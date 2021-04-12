@@ -168,27 +168,54 @@
 .serviceForm {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  
-    h1{
-      font-size: $h3FontSize;
-      margin-top: 40px;
-      margin-bottom: 40px;
+
+  h1 {
+    font-size: $h3FontSize;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    span {
+      color: red;
     }
-  
-  
+  }
+
   input {
     width: 55%;
     height: 21px;
     border-radius: $inputRadius;
     padding: 10px;
-    &:focus{
+    &:focus {
       border: $borderLine;
     }
+   
+    
   }
   span {
+    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+     &:nth-child(8){
+       input{
+      height: 40px;
+
+       }
+    }
+    &:nth-child(9){
+    input{
+      height: 40px;
+
+    }
+    }
+  }
+  button {
+    margin-top: 10px;
+    width: 50%;
+    height: 45px;
+    background-color: $shopBtnColor;
+    border-radius: $radiusPrimary;
+    color: $white;
+    margin-right: auto;
   }
 }
