@@ -9,7 +9,7 @@
     border-radius: $radiusPrimary;
     overflow: visible;
     box-shadow: $cardShadow;
-    
+    transition: opacity .5s;
     > span {
         font-size: $h3FontSize;
     }

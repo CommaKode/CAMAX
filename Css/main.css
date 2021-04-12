@@ -616,6 +616,8 @@ textarea, button, input {
   overflow: visible;
   -webkit-box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
           box-shadow: -4px 4px 20px 0px #6D6D6D 8%;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .shopCard > span {
