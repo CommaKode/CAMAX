@@ -1396,6 +1396,14 @@ footer {
   display: none;
 }
 
+.fade {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
 .no-psoudo::after {
   display: none !important;
 }
