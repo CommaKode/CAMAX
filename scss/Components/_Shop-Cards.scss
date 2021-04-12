@@ -8,8 +8,7 @@
     @include card($cardRadius);
     overflow: visible;
     box-shadow: $cardShadow;
-    margin-right: $partMargin;
-    
+    transition: opacity .5s;
     > span {
         font-size: $h3FontSize;
     }
