@@ -1661,6 +1661,9 @@ footer a {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .productGrid .shopCard {
@@ -1690,10 +1693,35 @@ footer a {
   padding: 33px 20px;
 }
 
+.filter h2 {
+  display: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 555px) {
+  .filter h2 {
+    display: block;
+  }
+}
+
+.filter h2 svg {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+}
+
+@media (max-width: 555px) {
+  .filter #accordion-1 {
+    margin-top: 20px;
+  }
+}
+
 .filter ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1709,6 +1737,12 @@ footer a {
   border: solid 1px #ffffff;
   color: #ffffff;
   white-space: nowrap;
+}
+
+@media (max-width: 555px) {
+  .filter ul {
+    display: none;
+  }
 }
 
 .filter ul > span {

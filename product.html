@@ -150,6 +150,8 @@
         <aside
           class="filter offright-xxl-1 offright-xl-1 offright-lg-1 col-xxl-2 col-xl-3 col-lg-4 col-md-6 offright-sm-1 col-sm-10 "
         >
+        <h2>فیلتر <?xml version="1.0" ?><svg enable-background="new 0 0 32 32" id="Editable-line" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="  M3.241,7.646L13,19v9l6-4v-5l9.759-11.354C29.315,6.996,28.848,6,27.986,6H4.014C3.152,6,2.685,6.996,3.241,7.646z" fill="none" id="XMLID_6_" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+        </h2>
           <ul id="accordion-1">
             <span>
               <p>فیلتر قیمت</p>
@@ -579,16 +581,24 @@
       <script>
         
         $(function () {
+          
           let accordions = $('.filter').children('ul')
-          let filters =accordions.next('div')
-          console.log(filters)
-          let duration =300;
-        
-            accordions.each(function(){
+          accordions.each(function(){
+            let filters =accordions.next('div')
+              let duration =300;
               $(this).on("click",function(){
                 $(this).next('div').slideToggle(duration)
               })
           })
+          let accordionIsOn =false
+           $('.filter').children("h2").click(function(){
+             accordionIsOn=true
+             let duration = 500;
+             $('.filter').children('ul').slideToggle(duration)
+           })
+           filterInLg=()=>{
+             
+           }
         });
 
 
