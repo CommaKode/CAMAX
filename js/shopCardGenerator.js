@@ -56,7 +56,11 @@ let filterFunction1 = (setKey) => {
   let counter = 0;
   for (let index = 1; index <= numberOfCards; index++) {
     if (arrayFunction(arrayName, index - 1) == setKey) {
-      document.getElementById(`card${index}`).classList.add("dn");
+      document.getElementById(`card${index}`).classList.add("fade");
+
+      setTimeout(function () {
+        document.getElementById(`card${index}`).classList.add("dn");
+      }, 700);
     }
     counter++;
   }
@@ -64,6 +68,9 @@ let filterFunction1 = (setKey) => {
 let filterFunction2 = () => {
   for (let index = 1; index <= numberOfCards; index++) {
     document.getElementById(`card${index}`).classList.remove("dn");
+    setTimeout(function () {
+      document.getElementById(`card${index}`).classList.add("show");
+    }, 300);
   }
 };
 
