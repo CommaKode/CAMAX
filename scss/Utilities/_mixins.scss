@@ -15,22 +15,15 @@
   @media (max-width: #{$filterInSmall}) {
     @content;
   }
-<<<<<<< HEAD
-=======
 }
 @mixin filterInLg {
   @media (min-width: #{$filterInSmall}) {
     @content;
   }
->>>>>>> 23ef8e38f5126362ad1957957fd9f0241ce10aa5
 }
 
 @mixin card($radius) {
   background-color: $white;
   border-radius: $radius;
   box-shadow: $cardShadow;
-<<<<<<< HEAD
-} ;
-=======
 }
->>>>>>> 23ef8e38f5126362ad1957957fd9f0241ce10aa5
