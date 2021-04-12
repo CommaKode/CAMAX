@@ -165,3 +165,25 @@
 }
 
 
+/////
+//// services form
+////
+.serviceForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: $h3FontSize;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    span{
+      color: $primaryColor;
+    }
+  }
+ input{
+   width: 148.33px;
+   border-radius: $inputRadius;
+ }
+//  span{
+//  }
+}

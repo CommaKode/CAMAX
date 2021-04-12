@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Css/main.css">
-</head>
-<body>
-    <main id="servicesForm">
-        <h1>خدمات پس از فروش <span>کامکث</span></h1>
-        <input id="CName" type="text">
-        <label for="">نام و نام خانوادگی :</label>
-        <input id="CNumber" type="text">
-        <label for="">شماره تلفن همراه :</label>
-        <input id="CEmail" type="text">
-        <label  for="">پست الکترونیک :</label>
+    <link rel="stylesheet" href="Css/main.css" />
+  </head>
+  <body>
+    <main id="servicesForm" class="serviceForm">
+      <h1>خدمات پس از فروش <span>کامکث</span></h1>
+      <span>
+        <label for="CName">نام و نام خانوادگی :</label>
+        <input id="CName" type="text" />
+      </span>
+      <span>
+        <label for="CNumber">شماره تلفن همراه :</label>
+        <input id="CNumber" type="text" />
+      </span>
+      <span>
+        <label for="CEmail">پست الکترونیک :</label>
+        <input id="CEmail" type="text" />
+      </span>
+      <span>
         <label for="">نوع کالا :</label>
-        <input list="productTypeBrowse" name="browser" id="productType"  />
+        <input list="productTypeBrowse" name="browser" id="productType" />
         <datalist id="productTypeBrowse">
           [
           <option value="Edge"></option>
@@ -27,8 +34,10 @@
           <option value="Safari"></option>
           ]
         </datalist>
+      </span>
+      <span>
         <label for="">نوع خدمات :</label>
-        <input list="serviceTypeBrowse" name="browser" id="serviceType"  />
+        <input list="serviceTypeBrowse" name="browser" id="serviceType" />
         <datalist id="serviceTypeBrowse">
           [
           <option value="aaaaaaaa"></option>
@@ -38,8 +47,10 @@
           <option value="Safari"></option>
           ]
         </datalist>
-        <label for="">سال تهیه ی کالا :</label>
-        <input list="yearOfProductBrowse" name="browser" id="yearOfProduct"  />
+      </span>
+      <span>
+        <label for="yearOfProduct">سال تهیه ی کالا :</label>
+        <input list="yearOfProductBrowse" name="browser" id="yearOfProduct" />
         <datalist id="yearOfProductBrowse">
           [
           <option value="Edge"></option>
@@ -49,12 +60,15 @@
           <option value="Safari"></option>
           ]
         </datalist>
-        <input type="text" name="" id="CAddress">
+      </span>
+      <span>
         <label for="">آدرس :</label>
-        <input id="CIntroduce" type="text">
+        <input type="text" name="" id="CAddress" />
+      </span>
+      <span>
         <label for="">توضیحات :</label>
- 
+        <input id="CIntroduce" type="text" />
+      </span>
     </main>
-
-</body>
+  </body>
 </html>

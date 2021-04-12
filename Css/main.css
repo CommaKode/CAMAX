@@ -1753,6 +1753,34 @@ footer a {
   margin-top: 25px;
 }
 
+.serviceForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.serviceForm h1 {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.serviceForm h1 span {
+  color: #fe0000;
+}
+
+.serviceForm input {
+  width: 148.33px;
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 576px) {
   .hero {
     min-height: 800px;
