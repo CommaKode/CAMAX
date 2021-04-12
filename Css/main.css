@@ -1719,13 +1719,7 @@ footer a {
 }
 
 .filter ul {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: none;
   height: 35px;
   position: relative;
   -webkit-transition: all 0.5s ease;
@@ -1737,12 +1731,6 @@ footer a {
   border: solid 1px #ffffff;
   color: #ffffff;
   white-space: nowrap;
-}
-
-@media (max-width: 555px) {
-  .filter ul {
-    display: none;
-  }
 }
 
 .filter ul > span {
@@ -1757,6 +1745,18 @@ footer a {
 
 .filter ul > span svg {
   padding-bottom: 10px;
+}
+
+@media (min-width: 555px) {
+  .filter ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .filterItems {
